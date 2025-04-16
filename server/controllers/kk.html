@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reddit Clone Socket.IO Test</title>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const connectBtn = document.getElementById("connect");
+        const status = document.getElementById("status");
+        let socket;
+
+        connectBtn.addEventListener("click", () => {
+          const token = document.getElementById("token").value;
+
+          // Disconnect if already connected
+          if (socket) {
+            socket.disconnect();
+          }
+
+          status.textContent = "Connecting...";
+
+          // Create Socket.IO connection with auth token
+          socket = io("http://localhost:5000", {
+            auth: { token },
+          });
+
+          // Connection events
+          socket.on("connect", () => {
+            status.textContent = "Connected";
+            status.style.color = "green";
+            log("Successfully connected to Socket.IO server");
+
+            // Enable action buttons
+            document.querySelectorAll(".action-btn").forEach((btn) => {
+              btn.disabled = false;
+            });
+          });
+
+          socket.on("connect_error", (error) => {
+            status.textContent = `Error: ${error.message}`;
+            status.style.color = "red";
+            log(`Connection error: ${error.message}`);
+          });
+
+          socket.on("disconnect", (reason) => {
+            status.textContent = `Disconnected: ${reason}`;
+            status.style.color = "orange";
+            log(`Disconnected: ${reason}`);
+
+            // Disable action buttons
+            document.querySelectorAll(".action-btn").forEach((btn) => {
+              btn.disabled = true;
+            });
+          });
+
+          // Set up action buttons
+          document.getElementById("joinPost").onclick = () => {
+            const postId = document.getElementById("postId").value;
+            if (!postId) return;
+
+            socket.emit("joinPost", postId);
+            log(`Emitted: joinPost with ID ${postId}`);
+          };
+
+          document.getElementById("leavePost").onclick = () => {
+            const postId = document.getElementById("postId").value;
+            if (!postId) return;
+
+            socket.emit("leavePost", postId);
+            log(`Emitted: leavePost with ID ${postId}`);
+          };
+
+          document.getElementById("joinSubreddit").onclick = () => {
+            const subredditId = document.getElementById("subredditId").value;
+            if (!subredditId) return;
+
+            socket.emit("joinSubreddit", subredditId);
+            log(`Emitted: joinSubreddit with ID ${subredditId}`);
+          };
+
+          // Listen for all events
+          socket.onAny((event, ...args) => {
+            log(`Received event: ${event}`, args);
+          });
+        });
+
+        // Helper function to log events
+        function log(message, data = null) {
+          const eventLog = document.getElementById("eventLog");
+          const entry = document.createElement("div");
+
+          const timestamp = new Date().toLocaleTimeString();
+          entry.innerHTML = `<strong>[${timestamp}]</strong> ${message}`;
+
+          if (data) {
+            const pre = document.createElement("pre");
+            pre.textContent = JSON.stringify(data, null, 2);
+            entry.appendChild(pre);
+          }
+
+          eventLog.prepend(entry);
+        }
+      });
+    </script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .container {
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+      input {
+        padding: 8px;
+        width: 250px;
+        margin-right: 5px;
+      }
+      button {
+        padding: 8px 12px;
+        background: #4285f4;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:disabled {
+        background: #ccc;
+        cursor: not-allowed;
+      }
+      .action-row {
+        margin: 10px 0;
+      }
+      #eventLog {
+        height: 300px;
+        overflow-y: auto;
+        border: 1px solid #eee;
+        padding: 10px;
+        background: #f9f9f9;
+      }
+      #eventLog div {
+        margin-bottom: 5px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 5px;
+      }
+      pre {
+        background: #f0f0f0;
+        padding: 5px;
+        border-radius: 3px;
+        margin: 5px 0;
+        overflow-x: auto;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      #status {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Reddit Clone Socket.IO Tester</h1>
+
+    <div class="container">
+      <h2>Connection</h2>
+      <div>Status: <span id="status">Disconnected</span></div>
+      <div class="action-row">
+        <input id="token" placeholder="Enter your JWT token" />
+        <button id="connect">Connect</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Actions</h2>
+
+      <div class="action-row">
+        <input id="postId" placeholder="Enter post ID" />
+        <button id="joinPost" class="action-btn" disabled>Join Post</button>
+        <button id="leavePost" class="action-btn" disabled>Leave Post</button>
+      </div>
+
+      <div class="action-row">
+        <input id="subredditId" placeholder="Enter subreddit ID" />
+        <button id="joinSubreddit" class="action-btn" disabled>
+          Join Subreddit
+        </button>
+      </div>
+    </div>
+
+    <h2>Event Log</h2>
+    <div id="eventLog"></div>
+  </body>
+</html>

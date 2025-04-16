@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+  @apply bg-gray-100 text-gray-900;
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded font-medium focus:outline-none focus:ring-2 transition duration-150 ease-in-out;
+  }
+  .btn-primary {
+    @apply bg-reddit-orange text-white hover:bg-orange-600 focus:ring-orange-500;
+  }
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-800 hover:bg-gray-300 focus:ring-gray-400;
+  }
+  .card {
+    @apply bg-white rounded-lg shadow p-4 border border-reddit-border;
+  }
+  .input {
+    @apply w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-reddit-orange focus:border-transparent;
+  }
+}
