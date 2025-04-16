@@ -1,4 +1,4 @@
-// server/models/User.js
+// Update to server/models/User.js
 const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
@@ -7,7 +7,7 @@ const jwt = require("jsonwebtoken");
 const NotificationSchema = new mongoose.Schema({
   type: {
     type: String,
-    enum: ["comment", "reply", "mention", "post", "follow", "message"],
+    enum: ["comment", "reply", "mention", "post", "follow", "message", "mod"],
     required: true,
   },
   message: {
@@ -67,10 +67,24 @@ const UserSchema = new mongoose.Schema(
       type: Number,
       default: 0,
     },
+    // Updated role field with more granular permissions
+    role: {
+      type: String,
+      enum: ["user", "moderator", "admin", "admitty_manager"],
+      default: "user",
+    },
+    // Maintain backward compatibility with isAdmin field
     isAdmin: {
       type: Boolean,
       default: false,
     },
+    // List of subreddits this user has moderation powers for
+    moderatedSubreddits: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Subreddit",
+      },
+    ],
     followedUsers: [
       {
         type: mongoose.Schema.Types.ObjectId,
@@ -105,6 +119,14 @@ UserSchema.virtual("posts", {
   justOne: false,
 });
 
+// Set isAdmin based on role
+UserSchema.pre("save", function (next) {
+  // Set isAdmin field based on role for backward compatibility
+  this.isAdmin = ["admin", "admitty_manager"].includes(this.role);
+
+  next();
+});
+
 // Encrypt password using bcrypt
 UserSchema.pre("save", async function (next) {
   if (!this.isModified("password")) {
@@ -117,9 +139,16 @@ UserSchema.pre("save", async function (next) {
 
 // Sign JWT and return
 UserSchema.methods.getSignedJwtToken = function () {
-  return jwt.sign({ id: this._id }, process.env.JWT_SECRET, {
-    expiresIn: process.env.JWT_EXPIRE,
-  });
+  return jwt.sign(
+    {
+      id: this._id,
+      role: this.role, // Include role in the JWT token
+    },
+    process.env.JWT_SECRET,
+    {
+      expiresIn: process.env.JWT_EXPIRE,
+    }
+  );
 };
 
 // Match user entered password to hashed password in database
@@ -137,6 +166,53 @@ UserSchema.methods.addNotification = async function (type, message, data = {}) {
   });
 
   await this.save();
+};
+
+// Check if user has specific permissions
+UserSchema.methods.hasPermission = function (action) {
+  const rolePermissions = {
+    user: ["vote", "comment", "create_post"],
+    moderator: [
+      "vote",
+      "comment",
+      "create_post",
+      "moderate_posts",
+      "moderate_comments",
+    ],
+    admin: [
+      "vote",
+      "comment",
+      "create_post",
+      "moderate_posts",
+      "moderate_comments",
+      "manage_subreddits",
+    ],
+    admitty_manager: [
+      "vote",
+      "comment",
+      "create_post",
+      "moderate_posts",
+      "moderate_comments",
+      "manage_subreddits",
+      "manage_users",
+      "moderate_all_subreddits",
+    ],
+  };
+
+  return rolePermissions[this.role]?.includes(action) || false;
+};
+
+// Check if user can moderate a specific subreddit
+UserSchema.methods.canModerateSubreddit = function (subredditId) {
+  // Admitty managers can moderate any subreddit
+  if (this.role === "admitty_manager" || this.role === "admin") {
+    return true;
+  }
+
+  // Check if user is a moderator for this specific subreddit
+  return this.moderatedSubreddits.some(
+    (id) => id.toString() === subredditId.toString()
+  );
 };
 
 module.exports = mongoose.model("User", UserSchema);

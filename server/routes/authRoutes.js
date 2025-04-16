@@ -1,4 +1,5 @@
-// server/routes/authRoutes.js
+// Update your server/routes/authRoutes.js file to include the new password update route
+
 const express = require("express");
 const router = express.Router();
 const {
@@ -8,6 +9,7 @@ const {
   getMe,
   forgotPassword,
   resetPassword,
+  updatePassword, // Add this import
 } = require("../controllers/authController");
 const { protect } = require("../middleware/auth");
 
@@ -18,5 +20,6 @@ router.get("/logout", logout);
 router.get("/me", protect, getMe);
 router.post("/forgotpassword", forgotPassword);
 router.put("/resetpassword/:resettoken", resetPassword);
+router.put("/password", protect, updatePassword); // Add this new route
 
 module.exports = router;

@@ -3,6 +3,122 @@ const User = require("../models/User");
 const Post = require("../models/Post");
 const Comment = require("../models/Comment");
 
+const multer = require("multer");
+const path = require("path");
+const fs = require("fs");
+
+// Configure multer storage
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    const uploadDir = "public/uploads/avatars";
+    // Create directory if it doesn't exist
+    if (!fs.existsSync(uploadDir)) {
+      fs.mkdirSync(uploadDir, { recursive: true });
+    }
+    cb(null, uploadDir);
+  },
+  filename: function (req, file, cb) {
+    // Create unique filename using user ID + timestamp + original extension
+    const fileExt = path.extname(file.originalname);
+    cb(null, `${req.user._id}-${Date.now()}${fileExt}`);
+  },
+});
+
+// File filter for images
+const fileFilter = (req, file, cb) => {
+  // Accept only image files
+  if (file.mimetype.startsWith("image/")) {
+    cb(null, true);
+  } else {
+    cb(new Error("Only image files are allowed!"), false);
+  }
+};
+
+// Initialize upload
+const upload = multer({
+  storage: storage,
+  limits: { fileSize: 5 * 1024 * 1024 }, // 5MB limit
+  fileFilter: fileFilter,
+});
+
+// @desc    Upload user avatar
+// @route   POST /api/users/avatar-upload
+// @access  Private
+exports.uploadAvatar = async (req, res, next) => {
+  try {
+    // Use multer middleware for single file upload
+    upload.single("avatar")(req, res, async function (err) {
+      if (err) {
+        if (err instanceof multer.MulterError) {
+          // A Multer error occurred when uploading
+          if (err.code === "LIMIT_FILE_SIZE") {
+            return res.status(400).json({
+              success: false,
+              message: "File too large. Maximum size is 5MB",
+            });
+          }
+          return res.status(400).json({
+            success: false,
+            message: `Upload error: ${err.message}`,
+          });
+        } else {
+          // An unknown error occurred
+          return res.status(400).json({
+            success: false,
+            message: err.message,
+          });
+        }
+      }
+
+      // If no file was uploaded
+      if (!req.file) {
+        return res.status(400).json({
+          success: false,
+          message: "Please upload an image file",
+        });
+      }
+
+      // Get the user
+      const user = await User.findById(req.user._id);
+
+      // Delete previous avatar if it exists and isn't the default
+      if (
+        user.avatar &&
+        !user.avatar.includes("default-avatar") &&
+        fs.existsSync(user.avatar)
+      ) {
+        // Only try to delete if it's a file in our uploads directory
+        if (user.avatar.includes("uploads/avatars")) {
+          try {
+            fs.unlinkSync(path.join(__dirname, "..", user.avatar));
+          } catch (error) {
+            console.error("Error deleting previous avatar:", error);
+          }
+        }
+      }
+
+      // Create URL for the uploaded file
+      const avatarUrl = `/uploads/avatars/${req.file.filename}`;
+
+      // Update user avatar in database
+      user.avatar = avatarUrl;
+      await user.save();
+
+      res.status(200).json({
+        success: true,
+        avatarUrl,
+        message: "Avatar uploaded successfully",
+      });
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({
+      success: false,
+      message: "Server error",
+    });
+  }
+};
+
 // @desc    Get user profile
 // @route   GET /api/users/:username
 // @access  Public
@@ -463,6 +579,50 @@ exports.getUserSubreddits = async (req, res, next) => {
       success: true,
       count: user.followedSubreddits.length,
       data: user.followedSubreddits,
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({
+      success: false,
+      message: "Server error",
+    });
+  }
+};
+
+// @desc    Delete user account
+// @route   DELETE /api/users/account
+// @access  Private
+exports.deleteAccount = async (req, res, next) => {
+  try {
+    // Get user
+    const user = await User.findById(req.user._id);
+
+    if (!user) {
+      return res.status(404).json({
+        success: false,
+        message: "User not found",
+      });
+    }
+
+    // Delete user's posts, comments, etc. (optional - can be handled with pre-remove middleware)
+    await Post.deleteMany({ author: user._id });
+    await Comment.deleteMany({ author: user._id });
+
+    // Remove user from subreddits they moderate
+    const subreddits = await Subreddit.find({ moderators: user._id });
+    for (const subreddit of subreddits) {
+      subreddit.moderators = subreddit.moderators.filter(
+        (id) => id.toString() !== user._id.toString()
+      );
+      await subreddit.save();
+    }
+
+    // Delete the user
+    await user.deleteOne();
+
+    res.status(200).json({
+      success: true,
+      message: "Account deleted successfully",
     });
   } catch (error) {
     console.error(error);

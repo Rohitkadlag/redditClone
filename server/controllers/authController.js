@@ -45,6 +45,43 @@ exports.register = async (req, res, next) => {
   }
 };
 
+// @desc    Update password
+// @route   PUT /api/auth/password
+// @access  Private
+exports.updatePassword = async (req, res, next) => {
+  try {
+    const { currentPassword, newPassword } = req.body;
+
+    // Get user with password
+    const user = await User.findById(req.user.id).select("+password");
+
+    // Check current password
+    const isMatch = await user.matchPassword(currentPassword);
+
+    if (!isMatch) {
+      return res.status(401).json({
+        success: false,
+        message: "Current password is incorrect",
+      });
+    }
+
+    // Set new password
+    user.password = newPassword;
+    await user.save();
+
+    res.status(200).json({
+      success: true,
+      message: "Password updated successfully",
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({
+      success: false,
+      message: "Server error",
+    });
+  }
+};
+
 // @desc    Login user
 // @route   POST /api/auth/login
 // @access  Public
