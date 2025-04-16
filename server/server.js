@@ -116,12 +116,12 @@ app.use(morgan("dev"));
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, "public")));
 
-// Rate limiting
-const limiter = rateLimit({
-  windowMs: 10 * 60 * 1000, // 10 minutes
-  max: 100, // limit each IP to 100 requests per windowMs
-});
-app.use(limiter);
+// // Rate limiting
+// const limiter = rateLimit({
+//   windowMs: 10 * 60 * 1000, // 10 minutes
+//   max: 100, // limit each IP to 100 requests per windowMs
+// });
+// app.use(limiter);
 
 // Routes
 app.use("/api/auth", require("./routes/authRoutes"));
@@ -130,9 +130,8 @@ app.use("/api/posts", require("./routes/postRoutes"));
 app.use("/api/comments", require("./routes/commentRoutes"));
 app.use("/api/subreddits", require("./routes/subredditRoutes"));
 app.use("/api/discussions", require("./routes/discussionRoutes"));
-// Add the new admin routes
 app.use("/api/admin", require("./routes/adminRoutes"));
-// app.use("/api/search", require("./routes/searchRoutes"));
+app.use("/api/search", require("./routes/searchRoutes"));
 
 // Health check route
 app.get("/health", (req, res) => {

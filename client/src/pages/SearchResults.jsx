@@ -192,12 +192,12 @@ function SearchResults() {
                     >
                       <div className="flex items-center">
                         <div className="flex-shrink-0 mr-3">
-                          <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-200">
+                          <div className="h-12 w-12 rounded-full overflow-hidden bg-gray-200">
                             {community.icon ? (
                               <img
                                 src={community.icon}
                                 alt={community.name}
-                                className="w-full h-full object-cover"
+                                className="h-full w-full object-cover"
                               />
                             ) : (
                               <div className="w-full h-full bg-blue-500 flex items-center justify-center text-white font-bold text-xl">
