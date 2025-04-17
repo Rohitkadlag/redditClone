@@ -14,7 +14,7 @@ const createAdmittyManager = async () => {
     const admittyManager = {
       username: "admittymanager",
       email: "admin@admitty.com",
-      password: "AdminPassword123!", // Change this to a secure password
+      password: "admin123", // Change this to a secure password
       role: "admitty_manager",
       bio: "Admitty Manager Account",
     };

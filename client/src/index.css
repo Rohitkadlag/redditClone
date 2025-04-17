@@ -24,3 +24,179 @@ body {
     @apply w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-reddit-orange focus:border-transparent;
   }
 }
+
+/* Primary color adjustments */
+:root {
+  /* Primary blue color from the screenshot */
+  --admitty-primary: #1a73e8;
+  --admitty-primary-hover: #1765cc;
+  --admitty-light-blue: #e8f0fe;
+  --admitty-text-primary: #202124;
+  --admitty-text-secondary: #5f6368;
+  --admitty-border-color: #dadce0;
+  --admitty-background: #f8f9fa;
+  --admitty-card-bg: #ffffff;
+}
+
+/* Body background */
+body {
+  background-color: var(--admitty-background);
+  color: var(--admitty-text-primary);
+}
+
+/* Sidebar styling */
+.sidebar {
+  background-color: var(--admitty-card-bg);
+  border-right: 1px solid var(--admitty-border-color);
+}
+
+.sidebar .active-item {
+  background-color: var(--admitty-light-blue);
+  color: var(--admitty-primary);
+}
+
+/* Navigation Links */
+.nav-link {
+  color: var(--admitty-text-secondary);
+}
+
+.nav-link:hover {
+  color: var(--admitty-primary);
+}
+
+.nav-link.active {
+  color: var(--admitty-primary);
+}
+
+/* Header and Search */
+.header {
+  background-color: var(--admitty-card-bg);
+  border-bottom: 1px solid var(--admitty-border-color);
+}
+
+.search-button {
+  background-color: var(--admitty-primary);
+  color: white;
+}
+
+.search-button:hover {
+  background-color: var(--admitty-primary-hover);
+}
+
+/* Cards and Content */
+.card {
+  background-color: var(--admitty-card-bg);
+  border: 1px solid var(--admitty-border-color);
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.topic-tag {
+  background-color: #f1f3f4;
+  color: var(--admitty-text-secondary);
+  border-radius: 16px;
+  padding: 4px 12px;
+  font-size: 14px;
+}
+
+/* Discussion titles */
+.discussion-title {
+  color: var(--admitty-primary);
+}
+
+.discussion-title:hover {
+  color: var(--admitty-primary-hover);
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--admitty-primary);
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--admitty-primary-hover);
+}
+
+.btn-secondary {
+  background-color: #f1f3f4;
+  color: var(--admitty-text-secondary);
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #e6e8e9;
+}
+
+/* Icons */
+.icon {
+  color: var(--admitty-text-secondary);
+}
+
+.icon-primary {
+  color: var(--admitty-primary);
+}
+
+/* Top discussion and recommended topics sections */
+.side-section {
+  background-color: var(--admitty-card-bg);
+  border: 1px solid var(--admitty-border-color);
+  border-radius: 8px;
+}
+
+.side-section-header {
+  font-weight: 600;
+  color: var(--admitty-text-primary);
+  margin-bottom: 1rem;
+}
+
+.topic-pill {
+  background-color: #f1f3f4;
+  border-radius: 16px;
+  color: var(--admitty-text-secondary);
+  display: inline-block;
+  padding: 4px 12px;
+  margin: 0 4px 8px 0;
+}
+
+.topic-pill:hover {
+  background-color: var(--admitty-light-blue);
+  color: var(--admitty-primary);
+}
+
+/* User profile links */
+.user-link {
+  color: var(--admitty-text-secondary);
+  font-weight: 500;
+}
+
+.user-link:hover {
+  color: var(--admitty-primary);
+}
+
+/* Override Reddit orange with Admitty blue */
+.reddit-orange,
+.btn-reddit-orange,
+.text-reddit-orange {
+  color: var(--admitty-primary) !important;
+}
+
+.bg-reddit-orange {
+  background-color: var(--admitty-primary) !important;
+}
+
+.border-reddit-border,
+.border-reddit-orange {
+  border-color: var(--admitty-border-color) !important;
+}
+
+/* Override any other Reddit-specific styling */
+.hover\:text-reddit-orange:hover {
+  color: var(--admitty-primary) !important;
+}
+
+.focus\:ring-reddit-orange:focus {
+  --tw-ring-color: var(--admitty-primary) !important;
+}
