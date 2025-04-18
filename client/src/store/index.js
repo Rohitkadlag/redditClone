@@ -6,6 +6,7 @@ import subredditsReducer from "../features/subreddits/subredditsSlice";
 import usersReducer from "../features/users/usersSlice";
 import notificationsReducer from "../features/notifications/notificationsSlice";
 import discussionsReducer from "../features/discussions/discussionsSlice";
+import reportsReducer from "../features/reports/reportsSlice";
 
 export const store = configureStore({
   reducer: {
@@ -16,6 +17,7 @@ export const store = configureStore({
     users: usersReducer,
     notifications: notificationsReducer,
     discussions: discussionsReducer,
+    reports: reportsReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

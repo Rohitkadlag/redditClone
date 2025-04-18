@@ -14,6 +14,7 @@ import Alert from "../components/common/Alert";
 import Pagination from "../components/common/Pagination";
 import { CalendarIcon, UserIcon } from "@heroicons/react/outline";
 import { formatDistanceToNow } from "date-fns";
+import ReportButton from "../components/common/ReportButton";
 
 function UserProfile() {
   const { username } = useParams();
@@ -116,6 +117,16 @@ function UserProfile() {
               >
                 {profile.isFollowing ? "Following" : "Follow"}
               </button>
+            )}
+            {isAuthenticated && !isOwnProfile && (
+              <div className="mt-2">
+                <ReportButton
+                  targetType="user"
+                  targetId={profile._id}
+                  targetName={profile.username}
+                  buttonStyle="text-with-icon"
+                />
+              </div>
             )}
           </div>
         </div>

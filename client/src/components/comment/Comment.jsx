@@ -9,6 +9,7 @@ import {
   DotsHorizontalIcon,
 } from "@heroicons/react/outline";
 import CommentForm from "./CommentForm";
+import ReportButton from "../common/ReportButton";
 
 function Comment({ comment, onVote, onReply }) {
   const [isReplying, setIsReplying] = useState(false);
@@ -99,6 +100,14 @@ function Comment({ comment, onVote, onReply }) {
         <button className="flex items-center hover:bg-gray-100 p-1 rounded">
           <DotsHorizontalIcon className="h-4 w-4" />
         </button>
+        {isAuthenticated && (
+          <ReportButton
+            targetType="comment"
+            targetId={comment._id}
+            targetName={`by ${comment.author.username}`}
+            buttonStyle="icon"
+          />
+        )}
       </div>
 
       {isReplying && (

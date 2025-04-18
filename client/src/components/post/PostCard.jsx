@@ -8,6 +8,8 @@ import {
   ShareIcon,
 } from "@heroicons/react/outline";
 
+import ReportButton from "../common/ReportButton";
+
 function PostCard({ post, onVote, detailed = false }) {
   const { isAuthenticated } = useSelector((state) => state.auth);
 
@@ -120,6 +122,12 @@ function PostCard({ post, onVote, detailed = false }) {
               <ShareIcon className="h-4 w-4 mr-1" />
               Share
             </button>
+            <ReportButton
+              targetType="post"
+              targetId={post._id}
+              targetName={post.title}
+              buttonStyle="text-with-icon"
+            />
           </div>
         </div>
       </div>
