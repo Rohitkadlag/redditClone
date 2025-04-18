@@ -5,7 +5,12 @@ import {
   joinSubreddit,
 } from "../../features/subreddits/subredditsSlice";
 import { Link } from "react-router-dom";
-import { UsersIcon, SearchIcon, FilterIcon } from "@heroicons/react/outline";
+import {
+  UsersIcon,
+  SearchIcon,
+  FilterIcon,
+  AcademicCapIcon,
+} from "@heroicons/react/outline";
 
 const Communities = () => {
   const dispatch = useDispatch();
@@ -18,13 +23,14 @@ const Communities = () => {
   const [sortBy, setSortBy] = useState("subscribers");
   const [showFilters, setShowFilters] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
+  const [communityType, setCommunityType] = useState("all"); // "all", "university", "general"
 
   useEffect(() => {
     // Fetch subreddits with pagination and sorting
     dispatch(
       fetchSubreddits({
         page: currentPage,
-        limit: pagination.limit,
+        limit: pagination.limit || 24,
         sort: sortBy,
         search: searchTerm.trim() || undefined,
       })
@@ -67,8 +73,27 @@ const Communities = () => {
     }
   };
 
+  // Filter communities by type
+  const filteredCommunities = subreddits.filter((community) => {
+    if (communityType === "all") return true;
+
+    const isUniversity = community.description
+      ?.toLowerCase()
+      .includes("official community for");
+
+    if (communityType === "university") return isUniversity;
+    if (communityType === "general") return !isUniversity;
+
+    return true;
+  });
+
+  // Function to determine if a community is a university
+  const isUniversityCommunity = (description) => {
+    return description?.toLowerCase().includes("official community for");
+  };
+
   return (
-    <div className="container mx-auto px-4 py-6 max-w-5xl">
+    <div className="container mx-auto px-4 py-6 max-w-6xl">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
         <div className="flex items-center mb-4 md:mb-0">
           <UsersIcon className="h-8 w-8 text-blue-600 mr-3" />
@@ -118,7 +143,7 @@ const Communities = () => {
 
         {showFilters && (
           <div className="mt-3 p-4 bg-gray-50 rounded-lg">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
                   Sort By
@@ -134,6 +159,21 @@ const Communities = () => {
                   <option value="-createdAt">Oldest</option>
                   <option value="name">A-Z</option>
                   <option value="-name">Z-A</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Community Type
+                </label>
+                <select
+                  value={communityType}
+                  onChange={(e) => setCommunityType(e.target.value)}
+                  className="block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                >
+                  <option value="all">All Communities</option>
+                  <option value="university">University Communities</option>
+                  <option value="general">General Communities</option>
                 </select>
               </div>
             </div>
@@ -173,7 +213,7 @@ const Communities = () => {
       )}
 
       {/* Empty state */}
-      {!loading && subreddits.length === 0 && (
+      {!loading && filteredCommunities.length === 0 && (
         <div className="text-center py-10">
           <UsersIcon className="h-16 w-16 text-gray-400 mx-auto mb-4" />
           <h3 className="text-lg font-medium text-gray-900">
@@ -198,16 +238,16 @@ const Communities = () => {
       )}
 
       {/* Communities grid */}
-      {!loading && subreddits.length > 0 && (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {subreddits.map((subreddit) => (
+      {!loading && filteredCommunities.length > 0 && (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          {filteredCommunities.map((subreddit) => (
             <div
               key={subreddit._id}
               className="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden"
             >
               {/* Banner/header */}
               <div
-                className="h-24 bg-gradient-to-r from-blue-400 to-indigo-500"
+                className="h-16 bg-gradient-to-r from-blue-400 to-indigo-500"
                 style={{
                   backgroundImage: subreddit.bannerImage
                     ? `url(${subreddit.bannerImage})`
@@ -222,18 +262,20 @@ const Communities = () => {
                 <div className="flex justify-between items-start">
                   <Link to={`/r/${subreddit.name}`} className="group">
                     <div className="flex items-center">
-                      <div className="h-12 w-12 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden border-4 border-white -mt-8">
+                      <div className="h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden border-2 border-white -mt-6">
                         {subreddit.icon ? (
                           <img
                             src={subreddit.icon}
                             alt={subreddit.name}
                             className="h-full w-full object-cover"
                           />
+                        ) : isUniversityCommunity(subreddit.description) ? (
+                          <AcademicCapIcon className="h-5 w-5 text-indigo-500" />
                         ) : (
-                          <UsersIcon className="h-6 w-6 text-gray-500" />
+                          <UsersIcon className="h-5 w-5 text-gray-500" />
                         )}
                       </div>
-                      <h3 className="ml-2 text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                      <h3 className="ml-2 text-md font-semibold text-gray-900 group-hover:text-blue-600 transition-colors truncate max-w-[140px]">
                         r/{subreddit.name}
                       </h3>
                     </div>
@@ -241,13 +283,13 @@ const Communities = () => {
                 </div>
 
                 <div className="mt-3">
-                  <p className="text-sm text-gray-600 line-clamp-2">
+                  <p className="text-xs text-gray-600 line-clamp-2 h-8">
                     {subreddit.description || "No description available."}
                   </p>
                 </div>
 
-                <div className="mt-4 flex justify-between items-center">
-                  <div className="text-sm text-gray-500">
+                <div className="mt-2 flex justify-between items-center">
+                  <div className="text-xs text-gray-500">
                     <span className="font-medium text-gray-900">
                       {subreddit.subscribers}
                     </span>{" "}
@@ -258,7 +300,7 @@ const Communities = () => {
                     onClick={() =>
                       handleJoinToggle(subreddit._id, subreddit.isJoined)
                     }
-                    className={`px-3 py-1 text-sm font-medium rounded-full ${
+                    className={`px-2 py-1 text-xs font-medium rounded-full ${
                       subreddit.isJoined
                         ? "bg-gray-100 text-gray-800 hover:bg-gray-200"
                         : "bg-blue-600 text-white hover:bg-blue-700"
@@ -275,7 +317,7 @@ const Communities = () => {
 
       {/* Pagination */}
       {!loading &&
-        subreddits.length > 0 &&
+        filteredCommunities.length > 0 &&
         pagination.total > pagination.limit && (
           <div className="flex justify-center mt-8">
             <nav className="flex items-center">
