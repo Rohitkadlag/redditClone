@@ -500,6 +500,114 @@ exports.unsuspendUser = async (req, res, next) => {
   }
 };
 
+// @desc    Remove a post
+// @route   DELETE /api/admin/posts/:id
+// @access  Private (admin only)
+exports.removePost = async (req, res) => {
+  try {
+    // Make sure only admins and admitty managers can access this
+    if (!["admin", "admitty_manager"].includes(req.user.role)) {
+      return res.status(403).json({
+        success: false,
+        message: "Not authorized to remove posts",
+      });
+    }
+
+    const { id } = req.params;
+    const { reason } = req.body;
+
+    if (!reason) {
+      return res.status(400).json({
+        success: false,
+        message: "Reason for removal is required",
+      });
+    }
+
+    const post = await Post.findById(id);
+
+    if (!post) {
+      return res.status(404).json({
+        success: false,
+        message: "Post not found",
+      });
+    }
+
+    // Mark post as removed
+    post.isRemoved = true;
+    post.removedReason = reason;
+    post.removedBy = req.user._id;
+    post.removedAt = Date.now();
+    post.content = "[This post was removed by a moderator]";
+
+    await post.save();
+
+    res.status(200).json({
+      success: true,
+      message: "Post removed successfully",
+    });
+  } catch (error) {
+    console.error("Error removing post:", error);
+    res.status(500).json({
+      success: false,
+      message: "Server error",
+    });
+  }
+};
+
+// @desc    Remove a comment
+// @route   DELETE /api/admin/comments/:id
+// @access  Private (admin only)
+exports.removeComment = async (req, res) => {
+  try {
+    // Make sure only admins and admitty managers can access this
+    if (!["admin", "admitty_manager"].includes(req.user.role)) {
+      return res.status(403).json({
+        success: false,
+        message: "Not authorized to remove comments",
+      });
+    }
+
+    const { id } = req.params;
+    const { reason } = req.body;
+
+    if (!reason) {
+      return res.status(400).json({
+        success: false,
+        message: "Reason for removal is required",
+      });
+    }
+
+    const comment = await Comment.findById(id);
+
+    if (!comment) {
+      return res.status(404).json({
+        success: false,
+        message: "Comment not found",
+      });
+    }
+
+    // Mark comment as removed
+    comment.isRemoved = true;
+    comment.content = "[This comment was removed by a moderator]";
+    comment.removedReason = reason;
+    comment.removedBy = req.user._id;
+    comment.removedAt = Date.now();
+
+    await comment.save();
+
+    res.status(200).json({
+      success: true,
+      message: "Comment removed successfully",
+    });
+  } catch (error) {
+    console.error("Error removing comment:", error);
+    res.status(500).json({
+      success: false,
+      message: "Server error",
+    });
+  }
+};
+
 // @desc    Resolve a report
 // @route   PUT /api/admin/reports/:id/resolve
 // @access  Private (admin only)

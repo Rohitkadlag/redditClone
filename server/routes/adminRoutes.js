@@ -11,6 +11,8 @@ const {
   getSubreddits,
   getReports,
   resolveReport,
+  removePost, // Add this
+  removeComment, // Add this
 } = require("../controllers/adminController");
 const { protect } = require("../middleware/auth");
 
@@ -37,6 +39,7 @@ router.get("/users", getUsers);
 router.get("/users/:id", getUserDetails);
 router.put("/users/:id/role", updateUserRole);
 router.put("/users/:id/suspend", suspendUser);
+router.put("/users/:id/unsuspend", unsuspendUser);
 
 // Subreddit management
 router.get("/subreddits", getSubreddits);
@@ -44,6 +47,9 @@ router.get("/subreddits", getSubreddits);
 // Report management
 router.get("/reports", getReports);
 router.put("/reports/:id/resolve", resolveReport);
-router.put("/users/:id/unsuspend", unsuspendUser);
+
+// Content management - Add these routes
+router.delete("/posts/:id", removePost);
+router.delete("/comments/:id", removeComment);
 
 module.exports = router;

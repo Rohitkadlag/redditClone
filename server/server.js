@@ -132,6 +132,7 @@ app.use("/api/subreddits", require("./routes/subredditRoutes"));
 app.use("/api/discussions", require("./routes/discussionRoutes"));
 app.use("/api/admin", require("./routes/adminRoutes"));
 app.use("/api/search", require("./routes/searchRoutes"));
+app.use("/api/reports", require("./routes/reportRoutes"));
 
 // Health check route
 app.get("/health", (req, res) => {

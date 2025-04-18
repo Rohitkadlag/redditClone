@@ -1,835 +1,2501 @@
 [
-  "Academy of Art University",
-  "Arkansas State University",
-  "Augustana University",
-  "Auburn University at Montgomery",
-  "(Kaplan) Arizona State University",
-  "California Lutheran University",
-  "(Shorelight) Adelphi University",
-  "California Baptist University",
-  "California State Polytechnic University, Pomona (College of the Extended University)",
-  "Dallas Baptist University",
-  "DeVry University",
-  "(INTO) Drew University",
-  "Duquesne University",
-  "East Carolina University",
-  "California State University, Northridge",
-  "Eastern Michigan University",
-  "Drexel University",
-  "Dakota State University",
-  "The Catholic University of America",
-  "California State University, Sacramento",
-  "California State University, Los Angeles - Extension",
-  "California State University, Los Angeles",
-  "California State University, San Bernardino",
-  "California State University, Chico",
-  "California State University, East Bay",
-  "California State University, Dominguez Hills",
-  "California State University, Bakersfield",
-  "California State University, Stanislaus",
-  "California State University, Channel Islands",
-  "California State University, Fresno",
-  "Fisher College",
-  "Florida Institute Of Technology",
-  "(Study Group) Florida Atlantic University",
-  "Franklin University",
-  "Florida International University, Florida",
-  "Fairleigh Dickinson University – FDU ( Vancouver, Canada )",
-  "Embry Riddle Aeronautical University",
-  "Felician University",
-  "Full Sail University",
-  "Gannon University",
-  "Fairleigh Dickinson University (USA)",
-  "Governors State University",
-  "Hult International Business School Boston,San Francisco campus",
-  "Indiana University of Pennsylvania",
-  "Golden Gate University",
-  "(INTO) Illinois State University",
-  "Georgia State University",
-  "(INTO) George Mason University",
-  "(INTO) Hofstra University",
-  "Grand Valley State University, Michigan",
-  "Green River College",
-  "George Mason University- Korea",
-  "Lehigh University",
-  "Kent State University",
-  "Lawrence Technological University",
-  "(INTO) Jefferson University, St, Philadelphia, Pennsylvania",
-  "Kennesaw State University",
-  "(Shorelight) Johns Hopkins University",
-  "(Study Group) James Madison University",
-  "Lewis University",
-  "Johnson & Wales University",
-  "Kutztown University",
-  "Lawrence Technological University (Michigan) and Pune Institute of Business Management (Pune)",
-  "Johnson & Wales University - Charlotte",
-  "New York Institute of Technology",
-  "Middle Tennessee State University",
-  "Lycoming College",
-  "Miami University, Oxford",
-  "Massachusetts College of Pharmacy and Health Sciences (MCPHS University)",
-  "(Shorelight) Louisiana State University",
-  "(Study Group) Lipscomb University",
-  "Midway University",
-  "Marquette University",
-  "Marshall University",
-  "(Study Group) Long Island University Post (LIU Post)",
-  "(Study Group) Long Island University Brooklyn (LIU Brooklyn)",
-  "Missouri State University",
-  "Milwaukee School of Engineering",
-  "Mississippi State University",
-  "Murray State University",
-  "(INTO) Montclair State University",
-  "Montana State University",
-  "Midwestern State University",
-  "New York Institute of Technology - NYIT ( Vancouver, Canada )",
-  "Mississippi College",
-  "Missouri University of Science and Technology",
-  "Southeast Missouri State University",
-  "Northwest Missouri State University",
-  "International University of Applied Sciences—IU",
-  "Northwood University",
-  "New Jersey Institute of Technology",
-  "Nebraska Wesleyan University",
-  "(INTO) New England College",
-  "New York Film Academy",
-  "Nova Southeastern University",
-  "Northern Arizona University",
-  "Northwest Executive Education - Northwood University",
-  "National University of Singapore(NUS)",
-  "Tokyo International University",
-  "International University of Monaco",
-  "Symbiosis International University, Dubai",
-  "Oklahoma State University - Stillwater",
-  "Purdue University - Northwest",
-  "Ohio University",
-  "Post University",
-  "Pittsburg State University",
-  "Park University",
-  "(Kaplan) Pace University",
-  "(INTO) Oregon State University",
-  "Oklahoma City University",
-  "Portland State University",
-  "Rochester Institute of Technology",
-  "SUNY Polytechnic Institute",
-  "Rivier University",
-  "Saint Leo University",
-  "Rowan University",
-  "Rider University",
-  "Saginaw Valley State University",
-  "Richard Bland College of William & Mary, Petersburg, Virginia",
-  "Sacred Heart University",
-  "Roosevelt University",
-  "Rochester Institute of Technology Dubai (RIT Dubai)",
-  "Seattle University",
-  "(INTO) Saint Louis University",
-  "Seattle Colleges",
-  "Savannah College of Art and Design - Savannah",
-  "Santa Monica College",
-  "Santa Rosa Junior College",
-  "San Jose State University",
-  "(Kaplan) Simmons University",
-  "Santa Ana College",
-  "San Francisco State University",
-  "Savannah College of Art and Design - Atlanta",
-  "Slippery Rock University",
-  "Southern Illinois University Edwardsville",
-  "Missouri Southern State University",
-  "St. Thomas University",
-  "Southern Illinois University Carbondale",
-  "Sonoma State University",
-  "Southwest Minnesota State University",
-  "Southern New Hampshire University",
-  "South Dakota School of Mines & Technology",
-  "Tennessee Tech University",
-  "State University of New York Oswego (SUNY Oswego)",
-  "Texas Wesleyan University",
-  "Stevens Institute of Technology",
-  "Tiffin University",
-  "SIM Global Education",
-  "(INTO) Suffolk University",
-  "Texas A & M University - Corpus Christi",
-  "Texas State University",
-  "Trine University",
-  "University of Albany, The State University of New York, Albany (SUNY Albany)",
-  "American Institute of Applied Sciences in Switzerland",
-  "Texas A & M University - Kingsville",
-  "The State University of New York at New Paltz (SUNY New Paltz)",
-  "Texas State University - Round Rock",
-  "State University of New York, Fredonia",
-  "State University of New York, Geneseo (SUNY Geneseo)",
-  "University of Arizona",
-  "University of Bridgeport",
-  "University of Cincinnati",
-  "University of Central Florida",
-  "University of California Berkeley Extension",
-  "Troy University",
-  "University of Massachusetts Dartmouth (UMass Dartmouth)",
-  "(INTO) University of Alabama at Birmingham",
-  "University Of Central Oklahoma",
-  "University of California, Berkeley",
-  "University of California, Los Angeles",
-  "University of California, Irvine Division of Continuing Education",
-  "University of California Riverside",
-  "University of California Riverside - College of Engineering",
-  "University of California Riverside Extension",
-  "University of California, Santa Cruz, Silicon Valley Extension (Professional Education)",
-  "The University of Alabama, Tuscaloosa",
-  "(Shorelight) University of Illinois Chicago",
-  "(Kaplan) University of Connecticut",
-  "University of Colorado Denver",
-  "The University of Findlay",
-  "(Shorelight) University of Illinois Springfield",
-  "University of Delaware",
-  "University of Idaho",
-  "University of Denver, Colorado (Daniel’s College of Business only)",
-  "University of Colorado Colorado Springs",
-  "(Shorelight) University of Dayton",
-  "University of Mary Hardin-Baylor",
-  "(Shorelight) University of Massachusetts Boston (UMass Boston)",
-  "The University of Memphis",
-  "University of Massachusetts Lowell (UMass Lowell)",
-  "University of Michigan-Flint",
-  "University of Maryland Baltimore County",
-  "University of Michigan",
-  "University of Kansas",
-  "(Kaplan) University of Oregon",
-  "University of North Carolina Wilmington",
-  "University of New Haven",
-  "University of New Mexico",
-  "University of North Florida",
-  "University of New Hampshire",
-  "University of Missouri–St. Louis (UMSL)",
-  "The University of Nebraska-Lincoln",
-  "University of North Texas",
-  "University of Oregon",
-  "University of Nebraska at Omaha",
-  "University of North Texas - Frisco",
-  "University of Tampa",
-  "University of Tulsa",
-  "University of Texas at Austin",
-  "University of St. Thomas",
-  "University of South Florida",
-  "University of South Carolina Upstate",
-  "University of Toledo",
-  "University of Tennessee at Chattanooga",
-  "The University of Scranton",
-  "University of South Alabama",
-  "University of Wisconsin Milwaukee, Wisconsin",
-  "University of Wisconsin–La Crosse",
-  "Valparaiso University",
-  "University of Wisconsin-Eau Claire",
-  "(Shorelight) University of the Pacific",
-  "(Shorelight) University of Utah",
-  "Upper Iowa University",
-  "Norwich University of the Arts",
-  "University of Vermont (Only UG)",
-  "University of Wisconsin-Stout",
-  "University of Wisconsin-Superior",
-  "Washington State University",
-  "Western Kentucky University",
-  "Western Illinois University - Macomb",
-  "Weber State University",
-  "Western New England University",
-  "Webster University - (St. Louis, Missouri)",
-  "(Study Group) Western Washington University",
-  "Virginia Tech Language and Culture Institute",
-  "Westcliff University",
-  "Western Oregon University",
-  "Webster University - (San Antonio, Texas)",
-  "Western Illinois University - Quad Cities",
-  "Washington State University - Vancouver (USA) Campus",
-  "Washington State University - Tri-Cities Campus",
-  "Whittier College",
-  "Yeshiva University",
-  "Worcester Polytechnic Institute",
-  "Woodbury University, Burbank, California",
-  "Youngstown State University",
-  "Wright State University",
-  "Wichita State University",
-  "York College of Pennsylvania",
-  "Acadia University",
-  "Northern College, Timmins",
-  "University of Ottawa",
-  "Bow Valley College - BVC",
-  "British Columbia Institute of Technology - BCIT",
-  "Adler University",
-  "Cambrian College",
-  "Acsenda School of Management",
-  "Brock University",
-  "Canadore College - College Drive North Bay Campus",
-  "Canadore College - Commerce Court North Bay Campus",
-  "Canadore College - West Parry Sound Campus",
-  "Dalhousie University",
-  "Cape Breton University - CBU",
-  "Carleton University",
-  "Conestoga College - Brantford Campus",
-  "Crandall University",
-  "Confederation College - Thunder Bay Campus",
-  "College of the Rockies - COTR",
-  "College of New Caledonia - CNC ( Prince George Campus )",
-  "Douglas College",
-  "Capilano University",
-  "Conestoga College - Cambridge Campus",
-  "Crandall University - Sussex",
-  "Conestoga College - Guelph Campus",
-  "Conestoga College - Doon Campus",
-  "Conestoga College - Waterloo Campus",
-  "Conestoga College - Milton Parkhill Drive Campus",
-  "Conestoga College - Kitchener (Downtown) Campus",
-  "Conestoga College - Reuter Drive Campus",
-  "Conestoga College - Milton( Steeles Avenue East)",
-  "Durham College",
-  "Fleming College",
-  "Simon Fraser University through Fraser International College",
-  "George Brown College - GBC (Casa Loma Campus)",
-  "Georgian College",
-  "Fanshawe College",
-  "Justice Institute of British Columbia - JIBC",
-  "University of Manitoba through International College of Manitoba",
-  "Great Plains College",
-  "George Brown College - GBC (St. James Campus)",
-  "George Brown College - GBC (Waterfront Campus)",
-  "King’s University College (University of Western Ontario)",
-  "MacEwan University",
-  "Langara College",
-  "University of Bedfordshire",
-  "Lambton College - Sarnia Campus",
-  "Kwantlen Polytechnic University - KPU",
-  "LaSalle College, Montreal",
-  "Lakehead University, Orillia",
-  "Laurentian University",
-  "Lakeland College",
-  "LaSalle College, Vancouver",
-  "Lambton College - Ottawa Campus",
-  "Lakehead University, Thunder Bay",
-  "Mount Saint Vincent University - MSVU",
-  "Memorial University of Newfoundland - MUN",
-  "Niagara College",
-  "Mount Allison University",
-  "Nipissing University",
-  "Medicine Hat College - MHC",
-  "Manitoba Institute of Trades and Technology - MITT",
-  "NorQuest College",
-  "Memorial University of Newfoundland - MUN (Grenfell Campus)",
-  "Ontario Tech University",
-  "Northern Lights College - NLC",
-  "Northern Alberta Institute of Technology - NAIT",
-  "North Island College - NIC",
-  "UQ College",
-  "Providence University College",
-  "Toronto Metropolitan University through Toronto Metropolitan International College - TMUIC",
-  "Royal Roads University - RRU",
-  "(INTO) Queen's University Belfast",
-  "Selkirk College",
-  "St. Francis Xavier University - StFX",
-  "St. Clair College, Ontario",
-  "Sheridan College - Davis Campus (Brampton)",
-  "Southern Alberta Institute of Technology - SAIT",
-  "St. Mary's University Twickenham, London",
-  "Saskatchewan Polytechnic, Moose Jaw",
-  "St. Lawrence College - SLC ( Brockville Campus )",
-  "St. Lawrence College - SLC (Cornwall Campus)",
-  "St. Lawrence College - SLC (Kingston Campus)",
-  "Saskatchewan Polytechnic, Prince Albert",
-  "Saskatchewan Polytechnic, Saskatoon",
-  "Sheridan College - Hazel McCallion Campus (Mississauga)",
-  "Sheridan College - Trafalgar Campus (Oakville)",
-  "Saskatchewan Polytechnic, Regina",
-  "University Canada West - UCW",
-  "University of Calgary Continuing Education",
-  "Nottingham Trent University",
-  "Thompson Rivers University - TRU",
-  "University of Alberta",
-  "Suncrest College",
-  "Trinity Western University - TWU",
-  "Toronto Metropolitan University - TMU",
-  "Vancouver Premier College - VPC",
-  "University of Alberta in Partnership with Kaplan",
-  "Trent University",
-  "University of Prince Edward Island - UPEI",
-  "University of Victoria",
-  "University of Waterloo",
-  "University of New Brunswick - UNB",
-  "University of Guelph",
-  "University of Lethbridge",
-  "University of Regina",
-  "University of Northern British Columbia - UNBC",
-  "University of Niagara Falls - UNF",
-  "University of Manitoba",
-  "University of Lethbridge through International College Calgary - UICC",
-  "University of New Brunswick - UNB (Saint John)",
-  "Wilfrid Laurier University - WLU",
-  "Vancouver Community College - VCC",
-  "University of Windsor",
-  "York University",
-  "University of the Fraser Valley - UFV",
-  "University of Winnipeg",
-  "Vancouver Film School - VFS",
-  "Wilfrid Laurier International College - WLIC",
-  "Abertay University",
-  "(ONCAMPUS) Aston University",
-  "Global Business School, Malta",
-  "Bangor University",
-  "(ONCAMPUS) Birkbeck, University of London",
-  "Birmingham City University",
-  "(NAVITAS) Anglia Ruskin University College",
-  "Aberystwyth University",
-  "Bishop Grosseteste University",
-  "(KAPLAN) Bournemouth University",
-  "Bath Spa University, Ras Al-Khaimah",
-  "Aston University",
-  "(NAVITAS) Birmingham City University- International College",
-  "(OXFORD INTERNATIONAL EDUCATION GROUP) Bangor University International College",
-  "Anglia Ruskin University (Chelmsford)",
-  "Nanyang Institute of Management",
-  "Aston University, London",
-  "Anglia Ruskin University (Cambridge)",
-  "Anglia Ruskin University, London",
-  "Anglia Ruskin University, Peterborough",
-  "Anglia Ruskin University, Writtle",
-  "Cambridge School of Visual & Performing Arts",
-  "De Montfort University, Dubai",
-  "Cardiff Metropolitan University",
-  "Cardiff University",
-  "Coventry University, Coventry",
-  "(STUDY GROUP) Durham University, Durham",
-  "Canterbury Christ Church University",
-  "Cranfield University",
-  "De Montfort University",
-  "Durham University",
-  "(OXFORD INTERNATIONAL EDUCATION GROUP) De Montfort University International College",
-  "Institute of Business, Technology and Engineering (IBTE), Dubai",
-  "PSB Academy",
-  "(STUDY GROUP) Cardiff University International Study Centre",
-  "Coventry University, London",
-  "IBA Kolding, Denmark",
-  "Coventry University, Wroclaw",
-  "Raffles College of Higher Education",
-  "(ONCAMPUS) Goldsmiths University of London",
-  "Heriot Watt University - Dubai",
-  "Istituto Marangoni",
-  "Edinburgh Napier University",
-  "(KAPLAN) University of Nottingham International College",
-  "(NAVITAS) Hertfordshire International College",
-  "(KAPLAN) University of Glasgow International College",
-  "Hult International Business School (Dubai)",
-  "Hult International Business School",
-  "(STUDY GROUP) The University of Sheffield International College",
-  "Heriot Watt University",
-  "Istituto Marangoni, Dubai",
-  "(OXFORD INTERNATIONAL EDUCATION GROUP) Edinburgh Napier University International College",
-  "Hotel & Tourism Management Institute Switzerland (HTMi)",
-  "Goldsmiths, University of London",
-  "(KAPLAN) University of Liverpool International College",
-  "Western Sydney University International College (Navitas)",
-  "(OXFORD INTERNATIONAL EDUCATION GROUP) University of Kent International College",
-  "(NAVITAS) London Brunel International College",
-  "(KAPLAN) University of Essex International College",
-  "(OXFORD INTERNATIONAL EDUCATION GROUP) International College Dundee",
-  "(NAVITAS) International College of Portsmouth",
-  "(KAPLAN) Nottingham Trent International College",
-  "(NAVITAS) University of Plymouth International College",
-  "Lancaster University",
-  "Kingston University",
-  "Liverpool Hope University",
-  "London South Bank University",
-  "Keele University",
-  "(STUDY GROUP) Liverpool John Moores University, Liverpool",
-  "Leeds Beckett University",
-  "(ONCAMPUS) London South Bank University",
-  "(STUDY GROUP) Leeds Beckett University, Leeds",
-  "(NAVITAS) Keele University International College",
-  "(INTO) Lancaster University",
-  "Lancaster University, Leipzig",
-  "(INTO) London World Education Centre",
-  "Manchester Metropolitan University",
-  "Loughborough University",
-  "Northumbria University, London",
-  "Middlesex University",
-  "Oxford Brookes University",
-  "Newcastle University",
-  "Northumbria University, Newcastle",
-  "Middlesex University - Dubai",
-  "Middlesex University, Mauritius",
-  "Loughborough University, London",
-  "(ONCAMPUS) Loughborough University",
-  "International Management Institute",
-  "Teesside University",
-  "(ONCAMPUS) Royal Veterinary College, University of London",
-  "Queen Mary University of London",
-  "Ravensbourne University London",
-  "Sheffield Hallam University",
-  "(NAVITAS) Robert Gordon University",
-  "Southampton Solent University",
-  "Royal Holloway University of London",
-  "Robert Gordon University",
-  "(QAHE) Solent University",
-  "(STUDY GROUP) Teesside University International Study Centre",
-  "(STUDY GROUP) Royal Holloway, University of London International Study Centre",
-  "Teesside University (London)",
-  "(KAPLAN) UWE Bristol",
-  "(STUDY GROUP) University of Aberdeen International Study Centre",
-  "University of Birmingham - Dubai",
-  "Ulster University, London Campus",
-  "Berlin School of Business and Innovation (BSBI), Berlin and Hamburg",
-  "University of Bath",
-  "University College Birmingham",
-  "(NAVITAS) University Academy 92",
-  "Ulster University, Birmingham Campus",
-  "University for the Creative Arts",
-  "Ulster University, Manchester Campus",
-  "University of Birmingham",
-  "University of Aberdeen",
-  "(KAPLAN) University of Birmingham",
-  "University of Lancashire (Previously known as University of Central Lancashire)",
-  "University of Bradford",
-  "University of Greater Manchester (Previously known as University of Bolton)",
-  "University of East London",
-  "University of East Anglia",
-  "University of Bristol",
-  "University of Chester",
-  "University of Dundee",
-  "(KAPLAN) University of Brighton",
-  "(ONCAMPUS) University of Central Lancashire",
-  "University of Brighton",
-  "University of Bolton Ras Al Khaimah, Dubai",
-  "(OXFORD INTERNATIONAL EDUCATION GROUP) University of Bradford International College",
-  "(KAPLAN) University of Bristol",
-  "University of the West of England, Bristol",
-  "University of Central Lancashire - Cyprus",
-  "University of Glasgow",
-  "(INTO) University of East of Anglia",
-  "University of Essex",
-  "(ONCAMPUS) University of Hull",
-  "University of Gloucestershire",
-  "University of Greenwich",
-  "The University of Huddersfield",
-  "(INTO) University of Exeter",
-  "University of Hertfordshire",
-  "University of Kent",
-  "University of Hull, London",
-  "University of Hull, Hull",
-  "The University of Huddersfield, London",
-  "University of Exeter",
-  "(STUDY GROUP) University of Huddersfield",
-  "(OXFORD INTERNATIONAL EDUCATION GROUP) University of Greenwich International College",
-  "(KAPLAN Open Learning) University of Essex",
-  "University of Hertfordshire, Sharjah",
-  "Kaplan Higher Education Academy (KHEA)",
-  "University of Leicester",
-  "University of Lincoln",
-  "University of Nottingham - Malaysia",
-  "University of Liverpool",
-  "University of Law (London)",
-  "University of Plymouth",
-  "The University of Northampton",
-  "(STUDY GROUP) University of Leeds, Leeds",
-  "University of Nottingham",
-  "University of Law (Birmingham)",
-  "University of Law (Chester)",
-  "University of Law (Liverpool)",
-  "University of Law (Manchester)",
-  "University of Leeds",
-  "University of Law (Norwich)",
-  "University of Law (Online)",
-  "University of Law (Sheffield)",
-  "University of Law (Bristol)",
-  "University of Law (Exeter)",
-  "University of Law (Leeds)",
-  "(KAPLAN Open Learning) University of Liverpool",
-  "University of Law (Newcastle)",
-  "University of Law (Nottingham)",
-  "University of Law (Reading)",
-  "University of Law (Southampton)",
-  "University of Nottingham, Ningbo, China",
-  "University of Salford",
-  "University of Portsmouth",
-  "(ONCAMPUS) University of Reading",
-  "University of Southampton, Malaysia",
-  "University of South Wales",
-  "University of Roehampton",
-  "University of Stirling",
-  "(INTO) University of Stirling",
-  "(ONCAMPUS) University of Southampton",
-  "University of Reading",
-  "(QAHE) University of South Wales",
-  "The University of Sheffield",
-  "University of Southampton",
-  "University of Portsmouth, London",
-  "University of Southampton (Winchester)",
-  "University of Wales Trinity Saint David, London",
-  "University of Suffolk, London",
-  "University of West London",
-  "University of Sunderland, London",
-  "University of Strathclyde",
-  "University of York",
-  "University of Wolverhampton",
-  "(STUDY GROUP) University of Sussex, Falmer",
-  "University of Surrey",
-  "University of the West of Scotland",
-  "London School of Commerce, Malta",
-  "University of Sunderland, Sunderland",
-  "University of Wales Trinity Saint David, Birmingham",
-  "University of Wales Trinity Saint David, Swansea",
-  "(ONCAMPUS) University of Sunderland",
-  "University of the West of Scotland, London",
-  "Bella Vista Institute of Higher Education Switzerland, Altdorf",
-  "(STUDY GROUP) University of Strathclyde International Study Centre",
-  "(STUDY GROUP) University of Surrey International Study Centre",
-  "(KAPLAN) University of York",
-  "University of Sussex",
-  "Atlantic Technological University : Letterkenny",
-  "Dublin City University",
-  "Griffith College",
-  "Maynooth University",
-  "Munster Technological University",
-  "Shannon College of Hotel Management",
-  "South East Technological University (SETU): Waterford",
-  "National College of Ireland",
-  "Dublin Business School",
-  "CCT College Dublin",
-  "Atlantic Technological University : Sligo",
-  "South East Technological University (SETU) : Carlow",
-  "University College Cork",
-  "University of Limerick",
-  "Technological University Dublin",
-  "University College Dublin",
-  "Trinity College Dublin",
-  "Accadis Hochschule Bad Homburg - University of Applied Sciences",
-  "CBS International Business School",
-  "EIIE Eurasia Institute for International Education GmbH",
-  "EU Business School (Germany)",
-  "GISMA Business School Hochschule",
-  "Arden University Berlin Study Center",
-  "International School of Management",
-  "EBS University",
-  "EU Business School, Switzerland",
-  "EU Business School (Spain)",
-  "SRH Berlin University of Applied Sciences",
-  "New European College",
-  "Macromedia University of Applied Sciences",
-  "Schiller International University, Paris Campus",
-  "Munich Business School",
-  "University of Europe for Applied Sciences",
-  "Schiller International University, Heidelberg Campus",
-  "Schiller International University, Madrid Campus",
-  "SRH Berlin University of Applied Sciences, Leipzig Campus",
-  "University of Europe for Applied Sciences, Dubai",
-  "Humber Polytechnic",
-  "College de Paris",
-  "Burgundy School of Business",
-  "De Vinci Higher Education",
-  "ESSCA School of Management",
-  "Marist University",
-  "Esigelec Graduate School of Engineering",
-  "ESCE International Business School",
-  "Foothill-De Anza College",
-  "New Zealand Management Academies (NZMA), Auckland",
-  "College De Paris, Malta Campus ( Ascencia, Malta )",
-  "INSEEC Business School",
-  "KEDGE Business School",
-  "Institut supérieur d`électronique de Paris (ISEP)",
-  "Ecole Ducasse, Paris",
-  "ICN Business School",
-  "Excelia Group, La Rochelle",
-  "Institut supérieur du commerce de Paris - ISC, Paris",
-  "ICN Business School, Berlin campus",
-  "(On Campus Paris) Kedge Business School",
-  "Le Cordon Bleu",
-  "NEOMA Business School",
-  "Skema Business School",
-  "Western Institute of Technology at Taranaki (WITT)",
-  "Rennes School of Business",
-  "Montpellier Business School",
-  "Sunway Le Cordon Bleu (Renowned hospitality school)",
-  "(KAPLAN) Queen Mary University of London",
-  "(ONCAMPUS) Queen Mary University of London",
-  "Queen Mary University of London (Online)",
-  "Queen Mary University of London Institute in Paris",
-  "Dalarna University",
-  "The Hague University of Applied Sciences through The Hague Pathway College",
-  "Halmstad University",
-  "Kristianstad University",
-  "Linnaeus University",
-  "Radboud University",
-  "Global School for Entrepreneurship, Haarlem Campus",
-  "University of Twente through Twente Pathway College",
-  "TIO University of Applied Sciences",
-  "Uppsala University",
-  "Wittenborg University of Applied Sciences",
-  "University of Twente, Enschede",
-  "University of Skövde",
-  "Aarhus University",
-  "Arcada University of Applied Sciences",
-  "Business & Hotel Management School (BHMS)",
-  "C3S Business School, Barcelona",
-  "Cesar Ritz",
-  "DOMUS Academy",
-  "American University of Ras Al Khaimah",
-  "Vanderbilt University",
-  "Culinary Arts Academy (CAA)",
-  "Istituto Europeo di Design - IED",
-  "Instituto Europeo di Design - IED",
-  "IHMGS, International Hotel Management Gastronomy School",
-  "University of Wollongong, Malaysia",
-  "Kazimieras Simonavicius University, Vilnius",
-  "University of Technology Sydney",
-  "University of New South Wales, Sydney",
-  "The University of Adelaide",
-  "International Business School (IBS)",
-  "Swinburne University of Technology",
-  "International Business School",
-  "DePaul University",
-  "Queen’s University, Canada",
-  "The University of Queensland",
-  "Colorado State University",
-  "University of Western Australia",
-  "University at Buffalo, The State University of New York, Buffalo (SUNY Buffalo)",
-  "University of Auckland",
-  "Dartmouth College",
-  "Deakin University",
-  "RMIT University",
-  "Macquarie University",
-  "Virginia Commonwealth University",
-  "Griffith University",
-  "University of Wollongong",
-  "Queen`s University Belfast",
-  "(INTO) The University of Oklahoma, Norman, Oklahoma",
-  "La Trobe University, Melbourne",
-  "La Trobe College",
-  "Flinders University",
-  "University of Louisville",
-  "Brunel University of London",
-  "(QAHE) Northumbria University",
-  "(NAVITAS) The College, Swansea University",
-  "Swansea University",
-  "University of Canterbury",
-  "(INTO) City University of London",
-  "City, University of London",
-  "University of Galway, Ireland",
-  "University of Waikato",
-  "Auckland University of Technology",
-  "Central Michigan University",
-  "Ball State University",
-  "(STUDY GROUP) University of Kingston International Study Centre",
-  "University of Derby",
-  "(Shorelight) Cleveland State University",
-  "University of South Dakota",
-  "Victoria University of Wellington",
-  "University of Staffordshire",
-  "London Metropolitan University",
-  "University of Central Arkansas",
-  "York St John University (York)",
-  "Xavier University",
-  "(Study Group) University of Hartford",
-  "Roger Williams University, Bristol, Rhode Island",
-  "Marymount University",
-  "Truman State University",
-  "Southern Utah University, Cedar, Utah",
-  "Leeds Trinity University",
-  "Maryville University",
-  "Shoreline Community College",
-  "Central Methodist University",
-  "Monroe University",
-  "William Jessup University",
-  "McMurry University",
-  "Franklin College",
-  "Charleston Southern University",
-  "Finger Lakes Community College",
-  "Sydney Institute of Business & Technology.",
-  "St George's, University of London",
-  "Neapolis University, Pafos",
-  "Niagara University, Ontario",
-  "Australian College of Applied Professions",
-  "Murdoch University, Perth",
-  "Polimi Graduate School of Management",
-  "NABA-Nuova Accademia Di Belle Arti",
-  "LUT University, Lappeenranta",
-  "Modul University",
-  "Les Roches",
-  "La Trobe Sydney (Navitas)",
-  "LAB University of Applied Sciences",
-  "Swiss Education Academy",
-  "Swiss Business School",
-  "Les Roches, Marbella Campus",
-  "Abu Dhabi Hospitality Academy Les Roches, Dubai",
-  "Western Sydney University, Sydney City (Navitas)",
-  "Charles Sturt University, Sydney (Navitas)",
-  "Charles Sturt University Melbourne (Navitas)",
-  "(Navitas) Queens College",
-  "Tampere University of Applied Sciences (TAMK), Tampere",
-  "Swiss Educational College, Weggies",
-  "University of Debrecen",
-  "UCAM International",
-  "Turku University of Applied Sciences",
-  "Swiss Hotel Management School (SHMS)",
-  "Budapest University of Economics and Business",
-  "University of Eastern Finland",
-  "Vilnius University",
-  "University of Nicosia",
-  "University of Vaasa",
-  "University of Padua",
-  "University of Southern Denmark, Odense and Sonderborg Campus",
-  "Abu Dhabi University",
-  "Curtin University, Dubai",
-  "Emirates Aviation University",
-  "HTMI Switzerland, Dubai",
-  "Institute of Management Technology, Dubai",
-  "Curtin College",
-  "Manipal University",
-  "University of Wollongong - Dubai",
-  "University of Wollongong, GIFT City Campus",
-  "Charles Darwin University International College- Up Education",
-  "Deakin College",
-  "Engineering Institute of Technology",
-  "Excelsia College",
-  "Charles Darwin University",
-  "James Cook University, Townsville",
-  "Eynesbury College",
-  "International College of Management Sydney",
-  "James Cook University (JCU) - Singapore",
-  "James Cook University, Brisbane",
-  "James Cook University, Cairns",
-  "Russo Business School",
-  "UP Education- Swinburne University of Technology",
-  "Queensland University of Technology",
-  "Monash College",
-  "Murdoch University - Dubai",
-  "South Australia Institute of Business & Technology",
-  "RMIT University, Vietnam",
-  "Swinburne University of Technology, Malaysia",
-  "University of Canberra College",
-  "University of Adelaide College",
-  "University of South Australia",
-  "University of Newcastle College of International Education",
-  "UTS College",
-  "University of Newcastle",
-  "University of Canberra,  Sydney Hills- ECA",
-  "University of the Sunshine Coast, Adelaide",
-  "University of Tasmania",
-  "UP Education University of Tasmania",
-  "University of Tasmania ECA Melbourne",
-  "Victoria University Sydney- ECA",
-  "Victoria University Brisbane",
-  "Ara Institute of Canterbury",
-  "Global College Malta",
-  "Kudan Institute of Japanese language & Culture",
-  "Lincoln University",
-  "Eastern Institute of Technology",
-  "Manukau Institute of Technology",
-  "Massey University",
-  "New Zealand Airline Academy",
-  "Toi Ohomai Institute of Technology",
-  "Otago Polytechnic",
-  "North Tec",
-  "Pacific International Hotel Management School",
-  "Southern Institute of Technology",
-  "University of Waikato College",
-  "UC International College, Christchurch",
-  "Wellington Institute of Technology (WelTec)",
-  "Unitec Institute of Technology",
-  "Whitireia New Zealand",
-  "Berkeley College, New York",
-  "Berkeley College, New Jersey"
+  {
+    "university_name": "Academy of Art University"
+  },
+  {
+    "university_name": "Arkansas State University"
+  },
+  {
+    "university_name": "Augustana University"
+  },
+  {
+    "university_name": "Auburn University at Montgomery"
+  },
+  {
+    "university_name": "(Kaplan) Arizona State University"
+  },
+  {
+    "university_name": "California Lutheran University"
+  },
+  {
+    "university_name": "(Shorelight) Adelphi University"
+  },
+  {
+    "university_name": "California Baptist University"
+  },
+  {
+    "university_name": "California State Polytechnic University, Pomona (College of the Extended University)"
+  },
+  {
+    "university_name": "Dallas Baptist University"
+  },
+  {
+    "university_name": "DeVry University"
+  },
+  {
+    "university_name": "(INTO) Drew University"
+  },
+  {
+    "university_name": "Duquesne University"
+  },
+  {
+    "university_name": "East Carolina University"
+  },
+  {
+    "university_name": "California State University, Northridge"
+  },
+  {
+    "university_name": "Eastern Michigan University"
+  },
+  {
+    "university_name": "Drexel University"
+  },
+  {
+    "university_name": "Dakota State University"
+  },
+  {
+    "university_name": "The Catholic University of America"
+  },
+  {
+    "university_name": "California State University, Sacramento"
+  },
+  {
+    "university_name": "California State University, Los Angeles - Extension"
+  },
+  {
+    "university_name": "California State University, Los Angeles"
+  },
+  {
+    "university_name": "California State University, San Bernardino"
+  },
+  {
+    "university_name": "California State University, Chico"
+  },
+  {
+    "university_name": "California State University, East Bay"
+  },
+  {
+    "university_name": "California State University, Dominguez Hills"
+  },
+  {
+    "university_name": "California State University, Bakersfield"
+  },
+  {
+    "university_name": "California State University, Stanislaus"
+  },
+  {
+    "university_name": "California State University, Channel Islands"
+  },
+  {
+    "university_name": "California State University, Fresno"
+  },
+  {
+    "university_name": "Fisher College"
+  },
+  {
+    "university_name": "Florida Institute Of Technology"
+  },
+  {
+    "university_name": "(Study Group) Florida Atlantic University"
+  },
+  {
+    "university_name": "Franklin University"
+  },
+  {
+    "university_name": "Florida International University, Florida"
+  },
+  {
+    "university_name": "Fairleigh Dickinson University â€“ FDU ( Vancouver, Canada )"
+  },
+  {
+    "university_name": "Embry Riddle Aeronautical University"
+  },
+  {
+    "university_name": "Felician University"
+  },
+  {
+    "university_name": "Full Sail University"
+  },
+  {
+    "university_name": "Gannon University"
+  },
+  {
+    "university_name": "Fairleigh Dickinson University (USA)"
+  },
+  {
+    "university_name": "Governors State University"
+  },
+  {
+    "university_name": "Hult International Business School Boston,San Francisco campus"
+  },
+  {
+    "university_name": "Indiana University of Pennsylvania"
+  },
+  {
+    "university_name": "Golden Gate University"
+  },
+  {
+    "university_name": "(INTO) Illinois State University"
+  },
+  {
+    "university_name": "Georgia State University"
+  },
+  {
+    "university_name": "(INTO) George Mason University"
+  },
+  {
+    "university_name": "(INTO) Hofstra University"
+  },
+  {
+    "university_name": "Grand Valley State University, Michigan"
+  },
+  {
+    "university_name": "Green River College"
+  },
+  {
+    "university_name": "George Mason University- Korea"
+  },
+  {
+    "university_name": "Lehigh University"
+  },
+  {
+    "university_name": "Kent State University"
+  },
+  {
+    "university_name": "Lawrence Technological University"
+  },
+  {
+    "university_name": "(INTO) Jefferson University, St, Philadelphia, Pennsylvania"
+  },
+  {
+    "university_name": "Kennesaw State University"
+  },
+  {
+    "university_name": "(Shorelight) Johns Hopkins University"
+  },
+  {
+    "university_name": "(Study Group) James Madison University"
+  },
+  {
+    "university_name": "Lewis University"
+  },
+  {
+    "university_name": "Johnson & Wales University"
+  },
+  {
+    "university_name": "Kutztown University"
+  },
+  {
+    "university_name": "Lawrence Technological University (Michigan) and Pune Institute of Business Management (Pune)"
+  },
+  {
+    "university_name": "Johnson & Wales University - Charlotte"
+  },
+  {
+    "university_name": "New York Institute of Technology"
+  },
+  {
+    "university_name": "Middle Tennessee State University"
+  },
+  {
+    "university_name": "Lycoming College"
+  },
+  {
+    "university_name": "Miami University, Oxford"
+  },
+  {
+    "university_name": "Massachusetts College of Pharmacy and Health Sciences (MCPHS University)"
+  },
+  {
+    "university_name": "(Shorelight) Louisiana State University"
+  },
+  {
+    "university_name": "(Study Group) Lipscomb University"
+  },
+  {
+    "university_name": "Midway University"
+  },
+  {
+    "university_name": "Marquette University"
+  },
+  {
+    "university_name": "Marshall University"
+  },
+  {
+    "university_name": "(Study Group) Long Island University Post (LIU Post)"
+  },
+  {
+    "university_name": "(Study Group) Long Island University Brooklyn (LIU Brooklyn)"
+  },
+  {
+    "university_name": "Missouri State University"
+  },
+  {
+    "university_name": "Milwaukee School of Engineering"
+  },
+  {
+    "university_name": "Mississippi State University"
+  },
+  {
+    "university_name": "Murray State University"
+  },
+  {
+    "university_name": "(INTO) Montclair State University"
+  },
+  {
+    "university_name": "Montana State University"
+  },
+  {
+    "university_name": "Midwestern State University"
+  },
+  {
+    "university_name": "New York Institute of Technology - NYIT ( Vancouver, Canada )"
+  },
+  {
+    "university_name": "Mississippi College"
+  },
+  {
+    "university_name": "Missouri University of Science and Technology"
+  },
+  {
+    "university_name": "Southeast Missouri State University"
+  },
+  {
+    "university_name": "Northwest Missouri State University"
+  },
+  {
+    "university_name": "International University of Applied Sciencesâ€”IU"
+  },
+  {
+    "university_name": "Northwood University"
+  },
+  {
+    "university_name": "New Jersey Institute of Technology"
+  },
+  {
+    "university_name": "Nebraska Wesleyan University"
+  },
+  {
+    "university_name": "(INTO) New England College"
+  },
+  {
+    "university_name": "New York Film Academy"
+  },
+  {
+    "university_name": "Nova Southeastern University"
+  },
+  {
+    "university_name": "Northern Arizona University"
+  },
+  {
+    "university_name": "Northwest Executive Education - Northwood University"
+  },
+  {
+    "university_name": "National University of Singapore(NUS)"
+  },
+  {
+    "university_name": "Tokyo International University"
+  },
+  {
+    "university_name": "International University of Monaco"
+  },
+  {
+    "university_name": "Symbiosis International University, Dubai"
+  },
+  {
+    "university_name": "Oklahoma State University - Stillwater"
+  },
+  {
+    "university_name": "Purdue University - Northwest"
+  },
+  {
+    "university_name": "Ohio University"
+  },
+  {
+    "university_name": "Post University"
+  },
+  {
+    "university_name": "Pittsburg State University"
+  },
+  {
+    "university_name": "Park University"
+  },
+  {
+    "university_name": "(Kaplan) Pace University"
+  },
+  {
+    "university_name": "(INTO) Oregon State University"
+  },
+  {
+    "university_name": "Oklahoma City University"
+  },
+  {
+    "university_name": "Portland State University"
+  },
+  {
+    "university_name": "Rochester Institute of Technology"
+  },
+  {
+    "university_name": "SUNY Polytechnic Institute"
+  },
+  {
+    "university_name": "Rivier University"
+  },
+  {
+    "university_name": "Saint Leo University"
+  },
+  {
+    "university_name": "Rowan University"
+  },
+  {
+    "university_name": "Rider University"
+  },
+  {
+    "university_name": "Saginaw Valley State University"
+  },
+  {
+    "university_name": "Richard Bland College of William & Mary, Petersburg, Virginia"
+  },
+  {
+    "university_name": "Sacred Heart University"
+  },
+  {
+    "university_name": "Roosevelt University"
+  },
+  {
+    "university_name": "Rochester Institute of Technology Dubai (RIT Dubai)"
+  },
+  {
+    "university_name": "Seattle University"
+  },
+  {
+    "university_name": "(INTO) Saint Louis University"
+  },
+  {
+    "university_name": "Seattle Colleges"
+  },
+  {
+    "university_name": "Savannah College of Art and Design - Savannah"
+  },
+  {
+    "university_name": "Santa Monica College"
+  },
+  {
+    "university_name": "Santa Rosa Junior College"
+  },
+  {
+    "university_name": "San Jose State University"
+  },
+  {
+    "university_name": "(Kaplan) Simmons University"
+  },
+  {
+    "university_name": "Santa Ana College"
+  },
+  {
+    "university_name": "San Francisco State University"
+  },
+  {
+    "university_name": "Savannah College of Art and Design - Atlanta"
+  },
+  {
+    "university_name": "Slippery Rock University"
+  },
+  {
+    "university_name": "Southern Illinois University Edwardsville"
+  },
+  {
+    "university_name": "Missouri Southern State University"
+  },
+  {
+    "university_name": "St. Thomas University"
+  },
+  {
+    "university_name": "Southern Illinois University Carbondale"
+  },
+  {
+    "university_name": "Sonoma State University"
+  },
+  {
+    "university_name": "Southwest Minnesota State University"
+  },
+  {
+    "university_name": "Southern New Hampshire University"
+  },
+  {
+    "university_name": "South Dakota School of Mines & Technology"
+  },
+  {
+    "university_name": "Tennessee Tech University"
+  },
+  {
+    "university_name": "State University of New York Oswego (SUNY Oswego)"
+  },
+  {
+    "university_name": "Texas Wesleyan University"
+  },
+  {
+    "university_name": "Stevens Institute of Technology"
+  },
+  {
+    "university_name": "Tiffin University"
+  },
+  {
+    "university_name": "SIM Global Education"
+  },
+  {
+    "university_name": "(INTO) Suffolk University"
+  },
+  {
+    "university_name": "Texas A & M University - Corpus Christi"
+  },
+  {
+    "university_name": "Texas State University"
+  },
+  {
+    "university_name": "Trine University"
+  },
+  {
+    "university_name": "University of Albany, The State University of New York, Albany (SUNY Albany)"
+  },
+  {
+    "university_name": "American Institute of Applied Sciences in Switzerland"
+  },
+  {
+    "university_name": "Texas A & M University - Kingsville"
+  },
+  {
+    "university_name": "The State University of New York at New Paltz (SUNY New Paltz)"
+  },
+  {
+    "university_name": "Texas State University - Round Rock"
+  },
+  {
+    "university_name": "State University of New York, Fredonia"
+  },
+  {
+    "university_name": "State University of New York, Geneseo (SUNY Geneseo)"
+  },
+  {
+    "university_name": "University of Arizona"
+  },
+  {
+    "university_name": "University of Bridgeport"
+  },
+  {
+    "university_name": "University of Cincinnati"
+  },
+  {
+    "university_name": "University of Central Florida"
+  },
+  {
+    "university_name": "University of California Berkeley Extension"
+  },
+  {
+    "university_name": "Troy University"
+  },
+  {
+    "university_name": "University of Massachusetts Dartmouth (UMass Dartmouth)"
+  },
+  {
+    "university_name": "(INTO) University of Alabama at Birmingham"
+  },
+  {
+    "university_name": "University Of Central Oklahoma"
+  },
+  {
+    "university_name": "University of California, Berkeley"
+  },
+  {
+    "university_name": "University of California, Los Angeles"
+  },
+  {
+    "university_name": "University of California, Irvine Division of Continuing Education"
+  },
+  {
+    "university_name": "University of California Riverside"
+  },
+  {
+    "university_name": "University of California Riverside - College of Engineering"
+  },
+  {
+    "university_name": "University of California Riverside Extension"
+  },
+  {
+    "university_name": "University of California, Santa Cruz, Silicon Valley Extension (Professional Education)"
+  },
+  {
+    "university_name": "The University of Alabama, Tuscaloosa"
+  },
+  {
+    "university_name": "(Shorelight) University of Illinois Chicago"
+  },
+  {
+    "university_name": "(Kaplan) University of Connecticut"
+  },
+  {
+    "university_name": "University of Colorado Denver"
+  },
+  {
+    "university_name": "The University of Findlay"
+  },
+  {
+    "university_name": "(Shorelight) University of Illinois Springfield"
+  },
+  {
+    "university_name": "University of Delaware"
+  },
+  {
+    "university_name": "University of Idaho"
+  },
+  {
+    "university_name": "University of Denver, Colorado (Danielâ€™s College of Business only)"
+  },
+  {
+    "university_name": "University of Colorado Colorado Springs"
+  },
+  {
+    "university_name": "(Shorelight) University of Dayton"
+  },
+  {
+    "university_name": "University of Mary Hardin-Baylor"
+  },
+  {
+    "university_name": "(Shorelight) University of Massachusetts Boston (UMass Boston)"
+  },
+  {
+    "university_name": "The University of Memphis"
+  },
+  {
+    "university_name": "University of Massachusetts Lowell (UMass Lowell)"
+  },
+  {
+    "university_name": "University of Michigan-Flint"
+  },
+  {
+    "university_name": "University of Maryland Baltimore County"
+  },
+  {
+    "university_name": "University of Michigan"
+  },
+  {
+    "university_name": "University of Kansas"
+  },
+  {
+    "university_name": "(Kaplan) University of Oregon"
+  },
+  {
+    "university_name": "University of North Carolina Wilmington"
+  },
+  {
+    "university_name": "University of New Haven"
+  },
+  {
+    "university_name": "University of New Mexico"
+  },
+  {
+    "university_name": "University of North Florida"
+  },
+  {
+    "university_name": "University of New Hampshire"
+  },
+  {
+    "university_name": "University of Missouriâ€“St. Louis (UMSL)"
+  },
+  {
+    "university_name": "The University of Nebraska-Lincoln"
+  },
+  {
+    "university_name": "University of North Texas"
+  },
+  {
+    "university_name": "University of Oregon"
+  },
+  {
+    "university_name": "University of Nebraska at Omaha"
+  },
+  {
+    "university_name": "University of North Texas - Frisco"
+  },
+  {
+    "university_name": "University of Tampa"
+  },
+  {
+    "university_name": "University of Tulsa"
+  },
+  {
+    "university_name": "University of Texas at Austin"
+  },
+  {
+    "university_name": "University of St. Thomas"
+  },
+  {
+    "university_name": "University of South Florida"
+  },
+  {
+    "university_name": "University of South Carolina Upstate"
+  },
+  {
+    "university_name": "University of Toledo"
+  },
+  {
+    "university_name": "University of Tennessee at Chattanooga"
+  },
+  {
+    "university_name": "The University of Scranton"
+  },
+  {
+    "university_name": "University of South Alabama"
+  },
+  {
+    "university_name": "University of Wisconsin Milwaukee, Wisconsin"
+  },
+  {
+    "university_name": "University of Wisconsinâ€“La Crosse"
+  },
+  {
+    "university_name": "Valparaiso University"
+  },
+  {
+    "university_name": "University of Wisconsin-Eau Claire"
+  },
+  {
+    "university_name": "(Shorelight) University of the Pacific"
+  },
+  {
+    "university_name": "(Shorelight) University of Utah"
+  },
+  {
+    "university_name": "Upper Iowa University"
+  },
+  {
+    "university_name": "Norwich University of the Arts"
+  },
+  {
+    "university_name": "University of Vermont (Only UG)"
+  },
+  {
+    "university_name": "University of Wisconsin-Stout"
+  },
+  {
+    "university_name": "University of Wisconsin-Superior"
+  },
+  {
+    "university_name": "Washington State University"
+  },
+  {
+    "university_name": "Western Kentucky University"
+  },
+  {
+    "university_name": "Western Illinois University - Macomb"
+  },
+  {
+    "university_name": "Weber State University"
+  },
+  {
+    "university_name": "Western New England University"
+  },
+  {
+    "university_name": "Webster University - (St. Louis, Missouri)"
+  },
+  {
+    "university_name": "(Study Group) Western Washington University"
+  },
+  {
+    "university_name": "Virginia Tech Language and Culture Institute"
+  },
+  {
+    "university_name": "Westcliff University"
+  },
+  {
+    "university_name": "Western Oregon University"
+  },
+  {
+    "university_name": "Webster University - (San Antonio, Texas)"
+  },
+  {
+    "university_name": "Western Illinois University - Quad Cities"
+  },
+  {
+    "university_name": "Washington State University - Vancouver (USA) Campus"
+  },
+  {
+    "university_name": "Washington State University - Tri-Cities Campus"
+  },
+  {
+    "university_name": "Whittier College"
+  },
+  {
+    "university_name": "Yeshiva University"
+  },
+  {
+    "university_name": "Worcester Polytechnic Institute"
+  },
+  {
+    "university_name": "Woodbury University, Burbank, California"
+  },
+  {
+    "university_name": "Youngstown State University"
+  },
+  {
+    "university_name": "Wright State University"
+  },
+  {
+    "university_name": "Wichita State University"
+  },
+  {
+    "university_name": "York College of Pennsylvania"
+  },
+  {
+    "university_name": "Acadia University"
+  },
+  {
+    "university_name": "Northern College, Timmins"
+  },
+  {
+    "university_name": "University of Ottawa"
+  },
+  {
+    "university_name": "Bow Valley College - BVC"
+  },
+  {
+    "university_name": "British Columbia Institute of Technology - BCIT"
+  },
+  {
+    "university_name": "Adler University"
+  },
+  {
+    "university_name": "Cambrian College"
+  },
+  {
+    "university_name": "Acsenda School of Management"
+  },
+  {
+    "university_name": "Brock University"
+  },
+  {
+    "university_name": "Canadore College - College Drive North Bay Campus"
+  },
+  {
+    "university_name": "Canadore College - Commerce Court North Bay Campus"
+  },
+  {
+    "university_name": "Canadore College - West Parry Sound Campus"
+  },
+  {
+    "university_name": "Dalhousie University"
+  },
+  {
+    "university_name": "Cape Breton University - CBU"
+  },
+  {
+    "university_name": "Carleton University"
+  },
+  {
+    "university_name": "Conestoga College - Brantford Campus"
+  },
+  {
+    "university_name": "Crandall University"
+  },
+  {
+    "university_name": "Confederation College - Thunder Bay Campus"
+  },
+  {
+    "university_name": "College of the Rockies - COTR"
+  },
+  {
+    "university_name": "College of New Caledonia - CNC ( Prince George Campus )"
+  },
+  {
+    "university_name": "Douglas College"
+  },
+  {
+    "university_name": "Capilano University"
+  },
+  {
+    "university_name": "Conestoga College - Cambridge Campus"
+  },
+  {
+    "university_name": "Crandall University - Sussex"
+  },
+  {
+    "university_name": "Conestoga College - Guelph Campus"
+  },
+  {
+    "university_name": "Conestoga College - Doon Campus"
+  },
+  {
+    "university_name": "Conestoga College - Waterloo Campus"
+  },
+  {
+    "university_name": "Conestoga College - Milton Parkhill Drive Campus"
+  },
+  {
+    "university_name": "Conestoga College - Kitchener (Downtown) Campus"
+  },
+  {
+    "university_name": "Conestoga College - Reuter Drive Campus"
+  },
+  {
+    "university_name": "Conestoga College - Milton( Steeles Avenue East)"
+  },
+  {
+    "university_name": "Durham College"
+  },
+  {
+    "university_name": "Fleming College"
+  },
+  {
+    "university_name": "Simon Fraser University through Fraser International College"
+  },
+  {
+    "university_name": "George Brown College - GBC (Casa Loma Campus)"
+  },
+  {
+    "university_name": "Georgian College"
+  },
+  {
+    "university_name": "Fanshawe College"
+  },
+  {
+    "university_name": "Justice Institute of British Columbia - JIBC"
+  },
+  {
+    "university_name": "University of Manitoba through International College of Manitoba"
+  },
+  {
+    "university_name": "Great Plains College"
+  },
+  {
+    "university_name": "George Brown College - GBC (St. James Campus)"
+  },
+  {
+    "university_name": "George Brown College - GBC (Waterfront Campus)"
+  },
+  {
+    "university_name": "Kingâ€™s University College (University of Western Ontario)"
+  },
+  {
+    "university_name": "MacEwan University"
+  },
+  {
+    "university_name": "Langara College"
+  },
+  {
+    "university_name": "University of Bedfordshire"
+  },
+  {
+    "university_name": "Lambton College - Sarnia Campus"
+  },
+  {
+    "university_name": "Kwantlen Polytechnic University - KPU"
+  },
+  {
+    "university_name": "LaSalle College, Montreal"
+  },
+  {
+    "university_name": "Lakehead University, Orillia"
+  },
+  {
+    "university_name": "Laurentian University"
+  },
+  {
+    "university_name": "Lakeland College"
+  },
+  {
+    "university_name": "LaSalle College, Vancouver"
+  },
+  {
+    "university_name": "Lambton College - Ottawa Campus"
+  },
+  {
+    "university_name": "Lakehead University, Thunder Bay"
+  },
+  {
+    "university_name": "Mount Saint Vincent University - MSVU"
+  },
+  {
+    "university_name": "Memorial University of Newfoundland - MUN"
+  },
+  {
+    "university_name": "Niagara College"
+  },
+  {
+    "university_name": "Mount Allison University"
+  },
+  {
+    "university_name": "Nipissing University"
+  },
+  {
+    "university_name": "Medicine Hat College - MHC"
+  },
+  {
+    "university_name": "Manitoba Institute of Trades and Technology - MITT"
+  },
+  {
+    "university_name": "NorQuest College"
+  },
+  {
+    "university_name": "Memorial University of Newfoundland - MUN (Grenfell Campus)"
+  },
+  {
+    "university_name": "Ontario Tech University"
+  },
+  {
+    "university_name": "Northern Lights College - NLC"
+  },
+  {
+    "university_name": "Northern Alberta Institute of Technology - NAIT"
+  },
+  {
+    "university_name": "North Island College - NIC"
+  },
+  {
+    "university_name": "UQ College"
+  },
+  {
+    "university_name": "Providence University College"
+  },
+  {
+    "university_name": "Toronto Metropolitan University through Toronto Metropolitan International College - TMUIC"
+  },
+  {
+    "university_name": "Royal Roads University - RRU"
+  },
+  {
+    "university_name": "(INTO) Queen's University Belfast"
+  },
+  {
+    "university_name": "Selkirk College"
+  },
+  {
+    "university_name": "St. Francis Xavier University - StFX"
+  },
+  {
+    "university_name": "St. Clair College, Ontario"
+  },
+  {
+    "university_name": "Sheridan College - Davis Campus (Brampton)"
+  },
+  {
+    "university_name": "Southern Alberta Institute of Technology - SAIT"
+  },
+  {
+    "university_name": "St. Mary's University Twickenham, London"
+  },
+  {
+    "university_name": "Saskatchewan Polytechnic, Moose Jaw"
+  },
+  {
+    "university_name": "St. Lawrence College - SLC ( Brockville Campus )"
+  },
+  {
+    "university_name": "St. Lawrence College - SLC (Cornwall Campus)"
+  },
+  {
+    "university_name": "St. Lawrence College - SLC (Kingston Campus)"
+  },
+  {
+    "university_name": "Saskatchewan Polytechnic, Prince Albert"
+  },
+  {
+    "university_name": "Saskatchewan Polytechnic, Saskatoon"
+  },
+  {
+    "university_name": "Sheridan College - Hazel McCallion Campus (Mississauga)"
+  },
+  {
+    "university_name": "Sheridan College - Trafalgar Campus (Oakville)"
+  },
+  {
+    "university_name": "Saskatchewan Polytechnic, Regina"
+  },
+  {
+    "university_name": "University Canada West - UCW"
+  },
+  {
+    "university_name": "University of Calgary Continuing Education"
+  },
+  {
+    "university_name": "Nottingham Trent University"
+  },
+  {
+    "university_name": "Thompson Rivers University - TRU"
+  },
+  {
+    "university_name": "University of Alberta"
+  },
+  {
+    "university_name": "Suncrest College"
+  },
+  {
+    "university_name": "Trinity Western University - TWU"
+  },
+  {
+    "university_name": "Toronto Metropolitan University - TMU"
+  },
+  {
+    "university_name": "Vancouver Premier College - VPC"
+  },
+  {
+    "university_name": "University of Alberta in Partnership with Kaplan"
+  },
+  {
+    "university_name": "Trent University"
+  },
+  {
+    "university_name": "University of Prince Edward Island - UPEI"
+  },
+  {
+    "university_name": "University of Victoria"
+  },
+  {
+    "university_name": "University of Waterloo"
+  },
+  {
+    "university_name": "University of New Brunswick - UNB"
+  },
+  {
+    "university_name": "University of Guelph"
+  },
+  {
+    "university_name": "University of Lethbridge"
+  },
+  {
+    "university_name": "University of Regina"
+  },
+  {
+    "university_name": "University of Northern British Columbia - UNBC"
+  },
+  {
+    "university_name": "University of Niagara Falls - UNF"
+  },
+  {
+    "university_name": "University of Manitoba"
+  },
+  {
+    "university_name": "University of Lethbridge through International College Calgary - UICC"
+  },
+  {
+    "university_name": "University of New Brunswick - UNB (Saint John)"
+  },
+  {
+    "university_name": "Wilfrid Laurier University - WLU"
+  },
+  {
+    "university_name": "Vancouver Community College - VCC"
+  },
+  {
+    "university_name": "University of Windsor"
+  },
+  {
+    "university_name": "York University"
+  },
+  {
+    "university_name": "University of the Fraser Valley - UFV"
+  },
+  {
+    "university_name": "University of Winnipeg"
+  },
+  {
+    "university_name": "Vancouver Film School - VFS"
+  },
+  {
+    "university_name": "Wilfrid Laurier International College - WLIC"
+  },
+  {
+    "university_name": "Abertay University"
+  },
+  {
+    "university_name": "(ONCAMPUS) Aston University"
+  },
+  {
+    "university_name": "Global Business School, Malta"
+  },
+  {
+    "university_name": "Bangor University"
+  },
+  {
+    "university_name": "(ONCAMPUS) Birkbeck, University of London"
+  },
+  {
+    "university_name": "Birmingham City University"
+  },
+  {
+    "university_name": "(NAVITAS) Anglia Ruskin University College"
+  },
+  {
+    "university_name": "Aberystwyth University"
+  },
+  {
+    "university_name": "Bishop Grosseteste University"
+  },
+  {
+    "university_name": "(KAPLAN) Bournemouth University"
+  },
+  {
+    "university_name": "Bath Spa University, Ras Al-Khaimah"
+  },
+  {
+    "university_name": "Aston University"
+  },
+  {
+    "university_name": "(NAVITAS) Birmingham City University- International College"
+  },
+  {
+    "university_name": "(OXFORD INTERNATIONAL EDUCATION GROUP) Bangor University International College"
+  },
+  {
+    "university_name": "Anglia Ruskin University (Chelmsford)"
+  },
+  {
+    "university_name": "Nanyang Institute of Management"
+  },
+  {
+    "university_name": "Aston University, London"
+  },
+  {
+    "university_name": "Anglia Ruskin University (Cambridge)"
+  },
+  {
+    "university_name": "Anglia Ruskin University, London"
+  },
+  {
+    "university_name": "Anglia Ruskin University, Peterborough"
+  },
+  {
+    "university_name": "Anglia Ruskin University, Writtle"
+  },
+  {
+    "university_name": "Cambridge School of Visual & Performing Arts"
+  },
+  {
+    "university_name": "De Montfort University, Dubai"
+  },
+  {
+    "university_name": "Cardiff Metropolitan University"
+  },
+  {
+    "university_name": "Cardiff University"
+  },
+  {
+    "university_name": "Coventry University, Coventry"
+  },
+  {
+    "university_name": "(STUDY GROUP) Durham University, Durham"
+  },
+  {
+    "university_name": "Canterbury Christ Church University"
+  },
+  {
+    "university_name": "Cranfield University"
+  },
+  {
+    "university_name": "De Montfort University"
+  },
+  {
+    "university_name": "Durham University"
+  },
+  {
+    "university_name": "(OXFORD INTERNATIONAL EDUCATION GROUP) De Montfort University International College"
+  },
+  {
+    "university_name": "Institute of Business, Technology and Engineering (IBTE), Dubai"
+  },
+  {
+    "university_name": "PSB Academy"
+  },
+  {
+    "university_name": "(STUDY GROUP) Cardiff University International Study Centre"
+  },
+  {
+    "university_name": "Coventry University, London"
+  },
+  {
+    "university_name": "IBA Kolding, Denmark"
+  },
+  {
+    "university_name": "Coventry University, Wroclaw"
+  },
+  {
+    "university_name": "Raffles College of Higher Education"
+  },
+  {
+    "university_name": "(ONCAMPUS) Goldsmiths University of London"
+  },
+  {
+    "university_name": "Heriot Watt University - Dubai"
+  },
+  {
+    "university_name": "Istituto Marangoni"
+  },
+  {
+    "university_name": "Edinburgh Napier University"
+  },
+  {
+    "university_name": "(KAPLAN) University of Nottingham International College"
+  },
+  {
+    "university_name": "(NAVITAS) Hertfordshire International College"
+  },
+  {
+    "university_name": "(KAPLAN) University of Glasgow International College"
+  },
+  {
+    "university_name": "Hult International Business School (Dubai)"
+  },
+  {
+    "university_name": "Hult International Business School"
+  },
+  {
+    "university_name": "(STUDY GROUP) The University of Sheffield International College"
+  },
+  {
+    "university_name": "Heriot Watt University"
+  },
+  {
+    "university_name": "Istituto Marangoni, Dubai"
+  },
+  {
+    "university_name": "(OXFORD INTERNATIONAL EDUCATION GROUP) Edinburgh Napier University International College"
+  },
+  {
+    "university_name": "Hotel & Tourism Management Institute Switzerland (HTMi)"
+  },
+  {
+    "university_name": "Goldsmiths, University of London"
+  },
+  {
+    "university_name": "(KAPLAN) University of Liverpool International College"
+  },
+  {
+    "university_name": "Western Sydney University International College (Navitas)"
+  },
+  {
+    "university_name": "(OXFORD INTERNATIONAL EDUCATION GROUP) University of Kent International College"
+  },
+  {
+    "university_name": "(NAVITAS) London Brunel International College"
+  },
+  {
+    "university_name": "(KAPLAN) University of Essex International College"
+  },
+  {
+    "university_name": "(OXFORD INTERNATIONAL EDUCATION GROUP) International College Dundee"
+  },
+  {
+    "university_name": "(NAVITAS) International College of Portsmouth"
+  },
+  {
+    "university_name": "(KAPLAN) Nottingham Trent International College"
+  },
+  {
+    "university_name": "(NAVITAS) University of Plymouth International College"
+  },
+  {
+    "university_name": "Lancaster University"
+  },
+  {
+    "university_name": "Kingston University"
+  },
+  {
+    "university_name": "Liverpool Hope University"
+  },
+  {
+    "university_name": "London South Bank University"
+  },
+  {
+    "university_name": "Keele University"
+  },
+  {
+    "university_name": "(STUDY GROUP) Liverpool John Moores University, Liverpool"
+  },
+  {
+    "university_name": "Leeds Beckett University"
+  },
+  {
+    "university_name": "(ONCAMPUS) London South Bank University"
+  },
+  {
+    "university_name": "(STUDY GROUP) Leeds Beckett University, Leeds"
+  },
+  {
+    "university_name": "(NAVITAS) Keele University International College"
+  },
+  {
+    "university_name": "(INTO) Lancaster University"
+  },
+  {
+    "university_name": "Lancaster University, Leipzig"
+  },
+  {
+    "university_name": "(INTO) London World Education Centre"
+  },
+  {
+    "university_name": "Manchester Metropolitan University"
+  },
+  {
+    "university_name": "Loughborough University"
+  },
+  {
+    "university_name": "Northumbria University, London"
+  },
+  {
+    "university_name": "Middlesex University"
+  },
+  {
+    "university_name": "Oxford Brookes University"
+  },
+  {
+    "university_name": "Newcastle University"
+  },
+  {
+    "university_name": "Northumbria University, Newcastle"
+  },
+  {
+    "university_name": "Middlesex University - Dubai"
+  },
+  {
+    "university_name": "Middlesex University, Mauritius"
+  },
+  {
+    "university_name": "Loughborough University, London"
+  },
+  {
+    "university_name": "(ONCAMPUS) Loughborough University"
+  },
+  {
+    "university_name": "International Management Institute"
+  },
+  {
+    "university_name": "Teesside University"
+  },
+  {
+    "university_name": "(ONCAMPUS) Royal Veterinary College, University of London"
+  },
+  {
+    "university_name": "Queen Mary University of London"
+  },
+  {
+    "university_name": "Ravensbourne University London"
+  },
+  {
+    "university_name": "Sheffield Hallam University"
+  },
+  {
+    "university_name": "(NAVITAS) Robert Gordon University"
+  },
+  {
+    "university_name": "Southampton Solent University"
+  },
+  {
+    "university_name": "Royal Holloway University of London"
+  },
+  {
+    "university_name": "Robert Gordon University"
+  },
+  {
+    "university_name": "(QAHE) Solent University"
+  },
+  {
+    "university_name": "(STUDY GROUP) Teesside University International Study Centre"
+  },
+  {
+    "university_name": "(STUDY GROUP) Royal Holloway, University of London International Study Centre"
+  },
+  {
+    "university_name": "Teesside University (London)"
+  },
+  {
+    "university_name": "(KAPLAN) UWE Bristol"
+  },
+  {
+    "university_name": "(STUDY GROUP) University of Aberdeen International Study Centre"
+  },
+  {
+    "university_name": "University of Birmingham - Dubai"
+  },
+  {
+    "university_name": "Ulster University, London Campus"
+  },
+  {
+    "university_name": "Berlin School of Business and Innovation (BSBI), Berlin and Hamburg"
+  },
+  {
+    "university_name": "University of Bath"
+  },
+  {
+    "university_name": "University College Birmingham"
+  },
+  {
+    "university_name": "(NAVITAS) University Academy 92"
+  },
+  {
+    "university_name": "Ulster University, Birmingham Campus"
+  },
+  {
+    "university_name": "University for the Creative Arts"
+  },
+  {
+    "university_name": "Ulster University, Manchester Campus"
+  },
+  {
+    "university_name": "University of Birmingham"
+  },
+  {
+    "university_name": "University of Aberdeen"
+  },
+  {
+    "university_name": "(KAPLAN) University of Birmingham"
+  },
+  {
+    "university_name": "University of Lancashire (Previously known as University of Central Lancashire)"
+  },
+  {
+    "university_name": "University of Bradford"
+  },
+  {
+    "university_name": "University of Greater Manchester (Previously known as University of Bolton)"
+  },
+  {
+    "university_name": "University of East London"
+  },
+  {
+    "university_name": "University of East Anglia"
+  },
+  {
+    "university_name": "University of Bristol"
+  },
+  {
+    "university_name": "University of Chester"
+  },
+  {
+    "university_name": "University of Dundee"
+  },
+  {
+    "university_name": "(KAPLAN) University of Brighton"
+  },
+  {
+    "university_name": "(ONCAMPUS) University of Central Lancashire"
+  },
+  {
+    "university_name": "University of Brighton"
+  },
+  {
+    "university_name": "University of Bolton Ras Al Khaimah, Dubai"
+  },
+  {
+    "university_name": "(OXFORD INTERNATIONAL EDUCATION GROUP) University of Bradford International College"
+  },
+  {
+    "university_name": "(KAPLAN) University of Bristol"
+  },
+  {
+    "university_name": "University of the West of England, Bristol"
+  },
+  {
+    "university_name": "University of Central Lancashire - Cyprus"
+  },
+  {
+    "university_name": "University of Glasgow"
+  },
+  {
+    "university_name": "(INTO) University of East of Anglia"
+  },
+  {
+    "university_name": "University of Essex"
+  },
+  {
+    "university_name": "(ONCAMPUS) University of Hull"
+  },
+  {
+    "university_name": "University of Gloucestershire"
+  },
+  {
+    "university_name": "University of Greenwich"
+  },
+  {
+    "university_name": "The University of Huddersfield"
+  },
+  {
+    "university_name": "(INTO) University of Exeter"
+  },
+  {
+    "university_name": "University of Hertfordshire"
+  },
+  {
+    "university_name": "University of Kent"
+  },
+  {
+    "university_name": "University of Hull, London"
+  },
+  {
+    "university_name": "University of Hull, Hull"
+  },
+  {
+    "university_name": "The University of Huddersfield, London"
+  },
+  {
+    "university_name": "University of Exeter"
+  },
+  {
+    "university_name": "(STUDY GROUP) University of Huddersfield"
+  },
+  {
+    "university_name": "(OXFORD INTERNATIONAL EDUCATION GROUP) University of Greenwich International College"
+  },
+  {
+    "university_name": "(KAPLAN Open Learning) University of Essex"
+  },
+  {
+    "university_name": "University of Hertfordshire, Sharjah"
+  },
+  {
+    "university_name": "Kaplan Higher Education Academy (KHEA)"
+  },
+  {
+    "university_name": "University of Leicester"
+  },
+  {
+    "university_name": "University of Lincoln"
+  },
+  {
+    "university_name": "University of Nottingham - Malaysia"
+  },
+  {
+    "university_name": "University of Liverpool"
+  },
+  {
+    "university_name": "University of Law (London)"
+  },
+  {
+    "university_name": "University of Plymouth"
+  },
+  {
+    "university_name": "The University of Northampton"
+  },
+  {
+    "university_name": "(STUDY GROUP) University of Leeds, Leeds"
+  },
+  {
+    "university_name": "University of Nottingham"
+  },
+  {
+    "university_name": "University of Law (Birmingham)"
+  },
+  {
+    "university_name": "University of Law (Chester)"
+  },
+  {
+    "university_name": "University of Law (Liverpool)"
+  },
+  {
+    "university_name": "University of Law (Manchester)"
+  },
+  {
+    "university_name": "University of Leeds"
+  },
+  {
+    "university_name": "University of Law (Norwich)"
+  },
+  {
+    "university_name": "University of Law (Online)"
+  },
+  {
+    "university_name": "University of Law (Sheffield)"
+  },
+  {
+    "university_name": "University of Law (Bristol)"
+  },
+  {
+    "university_name": "University of Law (Exeter)"
+  },
+  {
+    "university_name": "University of Law (Leeds)"
+  },
+  {
+    "university_name": "(KAPLAN Open Learning) University of Liverpool"
+  },
+  {
+    "university_name": "University of Law (Newcastle)"
+  },
+  {
+    "university_name": "University of Law (Nottingham)"
+  },
+  {
+    "university_name": "University of Law (Reading)"
+  },
+  {
+    "university_name": "University of Law (Southampton)"
+  },
+  {
+    "university_name": "University of Nottingham, Ningbo, China"
+  },
+  {
+    "university_name": "University of Salford"
+  },
+  {
+    "university_name": "University of Portsmouth"
+  },
+  {
+    "university_name": "(ONCAMPUS) University of Reading"
+  },
+  {
+    "university_name": "University of Southampton, Malaysia"
+  },
+  {
+    "university_name": "University of South Wales"
+  },
+  {
+    "university_name": "University of Roehampton"
+  },
+  {
+    "university_name": "University of Stirling"
+  },
+  {
+    "university_name": "(INTO) University of Stirling"
+  },
+  {
+    "university_name": "(ONCAMPUS) University of Southampton"
+  },
+  {
+    "university_name": "University of Reading"
+  },
+  {
+    "university_name": "(QAHE) University of South Wales"
+  },
+  {
+    "university_name": "The University of Sheffield"
+  },
+  {
+    "university_name": "University of Southampton"
+  },
+  {
+    "university_name": "University of Portsmouth, London"
+  },
+  {
+    "university_name": "University of Southampton (Winchester)"
+  },
+  {
+    "university_name": "University of Wales Trinity Saint David, London"
+  },
+  {
+    "university_name": "University of Suffolk, London"
+  },
+  {
+    "university_name": "University of West London"
+  },
+  {
+    "university_name": "University of Sunderland, London"
+  },
+  {
+    "university_name": "University of Strathclyde"
+  },
+  {
+    "university_name": "University of York"
+  },
+  {
+    "university_name": "University of Wolverhampton"
+  },
+  {
+    "university_name": "(STUDY GROUP) University of Sussex, Falmer"
+  },
+  {
+    "university_name": "University of Surrey"
+  },
+  {
+    "university_name": "University of the West of Scotland"
+  },
+  {
+    "university_name": "London School of Commerce, Malta"
+  },
+  {
+    "university_name": "University of Sunderland, Sunderland"
+  },
+  {
+    "university_name": "University of Wales Trinity Saint David, Birmingham"
+  },
+  {
+    "university_name": "University of Wales Trinity Saint David, Swansea"
+  },
+  {
+    "university_name": "(ONCAMPUS) University of Sunderland"
+  },
+  {
+    "university_name": "University of the West of Scotland, London"
+  },
+  {
+    "university_name": "Bella Vista Institute of Higher Education Switzerland, Altdorf"
+  },
+  {
+    "university_name": "(STUDY GROUP) University of Strathclyde International Study Centre"
+  },
+  {
+    "university_name": "(STUDY GROUP) University of Surrey International Study Centre"
+  },
+  {
+    "university_name": "(KAPLAN) University of York"
+  },
+  {
+    "university_name": "University of Sussex"
+  },
+  {
+    "university_name": "Atlantic Technological University : Letterkenny"
+  },
+  {
+    "university_name": "Dublin City University"
+  },
+  {
+    "university_name": "Griffith College"
+  },
+  {
+    "university_name": "Maynooth University"
+  },
+  {
+    "university_name": "Munster Technological University"
+  },
+  {
+    "university_name": "Shannon College of Hotel Management"
+  },
+  {
+    "university_name": "South East Technological University (SETU): Waterford"
+  },
+  {
+    "university_name": "National College of Ireland"
+  },
+  {
+    "university_name": "Dublin Business School"
+  },
+  {
+    "university_name": "CCT College Dublin"
+  },
+  {
+    "university_name": "Atlantic Technological University : Sligo"
+  },
+  {
+    "university_name": "South East Technological University (SETU) : Carlow"
+  },
+  {
+    "university_name": "University College Cork"
+  },
+  {
+    "university_name": "University of Limerick"
+  },
+  {
+    "university_name": "Technological University Dublin"
+  },
+  {
+    "university_name": "University College Dublin"
+  },
+  {
+    "university_name": "Trinity College Dublin"
+  },
+  {
+    "university_name": "Accadis Hochschule Bad Homburg - University of Applied Sciences"
+  },
+  {
+    "university_name": "CBS International Business School"
+  },
+  {
+    "university_name": "EIIE Eurasia Institute for International Education GmbH"
+  },
+  {
+    "university_name": "EU Business School (Germany)"
+  },
+  {
+    "university_name": "GISMA Business School Hochschule"
+  },
+  {
+    "university_name": "Arden University Berlin Study Center"
+  },
+  {
+    "university_name": "International School of Management"
+  },
+  {
+    "university_name": "EBS University"
+  },
+  {
+    "university_name": "EU Business School, Switzerland"
+  },
+  {
+    "university_name": "EU Business School (Spain)"
+  },
+  {
+    "university_name": "SRH Berlin University of Applied Sciences"
+  },
+  {
+    "university_name": "New European College"
+  },
+  {
+    "university_name": "Macromedia University of Applied Sciences"
+  },
+  {
+    "university_name": "Schiller International University, Paris Campus"
+  },
+  {
+    "university_name": "Munich Business School"
+  },
+  {
+    "university_name": "University of Europe for Applied Sciences"
+  },
+  {
+    "university_name": "Schiller International University, Heidelberg Campus"
+  },
+  {
+    "university_name": "Schiller International University, Madrid Campus"
+  },
+  {
+    "university_name": "SRH Berlin University of Applied Sciences, Leipzig Campus"
+  },
+  {
+    "university_name": "University of Europe for Applied Sciences, Dubai"
+  },
+  {
+    "university_name": "Humber Polytechnic"
+  },
+  {
+    "university_name": "College de Paris"
+  },
+  {
+    "university_name": "Burgundy School of Business"
+  },
+  {
+    "university_name": "De Vinci Higher Education"
+  },
+  {
+    "university_name": "ESSCA School of Management"
+  },
+  {
+    "university_name": "Marist University"
+  },
+  {
+    "university_name": "Esigelec Graduate School of Engineering"
+  },
+  {
+    "university_name": "ESCE International Business School"
+  },
+  {
+    "university_name": "Foothill-De Anza College"
+  },
+  {
+    "university_name": "New Zealand Management Academies (NZMA), Auckland"
+  },
+  {
+    "university_name": "College De Paris, Malta Campus ( Ascencia, Malta )"
+  },
+  {
+    "university_name": "INSEEC Business School"
+  },
+  {
+    "university_name": "KEDGE Business School"
+  },
+  {
+    "university_name": "Institut supÃ©rieur dÃ©lectronique de Paris (ISEP)"
+  },
+  {
+    "university_name": "Ecole Ducasse, Paris"
+  },
+  {
+    "university_name": "ICN Business School"
+  },
+  {
+    "university_name": "Excelia Group, La Rochelle"
+  },
+  {
+    "university_name": "Institut supÃ©rieur du commerce de Paris - ISC, Paris"
+  },
+  {
+    "university_name": "ICN Business School, Berlin campus"
+  },
+  {
+    "university_name": "(On Campus Paris) Kedge Business School"
+  },
+  {
+    "university_name": "Le Cordon Bleu"
+  },
+  {
+    "university_name": "NEOMA Business School"
+  },
+  {
+    "university_name": "Skema Business School"
+  },
+  {
+    "university_name": "Western Institute of Technology at Taranaki (WITT)"
+  },
+  {
+    "university_name": "Rennes School of Business"
+  },
+  {
+    "university_name": "Montpellier Business School"
+  },
+  {
+    "university_name": "Sunway Le Cordon Bleu (Renowned hospitality school)"
+  },
+  {
+    "university_name": "(KAPLAN) Queen Mary University of London"
+  },
+  {
+    "university_name": "(ONCAMPUS) Queen Mary University of London"
+  },
+  {
+    "university_name": "Queen Mary University of London (Online)"
+  },
+  {
+    "university_name": "Queen Mary University of London Institute in Paris"
+  },
+  {
+    "university_name": "Dalarna University"
+  },
+  {
+    "university_name": "The Hague University of Applied Sciences through The Hague Pathway College"
+  },
+  {
+    "university_name": "Halmstad University"
+  },
+  {
+    "university_name": "Kristianstad University"
+  },
+  {
+    "university_name": "Linnaeus University"
+  },
+  {
+    "university_name": "Radboud University"
+  },
+  {
+    "university_name": "Global School for Entrepreneurship, Haarlem Campus"
+  },
+  {
+    "university_name": "University of Twente through Twente Pathway College"
+  },
+  {
+    "university_name": "TIO University of Applied Sciences"
+  },
+  {
+    "university_name": "Uppsala University"
+  },
+  {
+    "university_name": "Wittenborg University of Applied Sciences"
+  },
+  {
+    "university_name": "University of Twente, Enschede"
+  },
+  {
+    "university_name": "University of SkÃ¶vde"
+  },
+  {
+    "university_name": "Aarhus University"
+  },
+  {
+    "university_name": "Arcada University of Applied Sciences"
+  },
+  {
+    "university_name": "Business & Hotel Management School (BHMS)"
+  },
+  {
+    "university_name": "C3S Business School, Barcelona"
+  },
+  {
+    "university_name": "Cesar Ritz"
+  },
+  {
+    "university_name": "DOMUS Academy"
+  },
+  {
+    "university_name": "American University of Ras Al Khaimah"
+  },
+  {
+    "university_name": "Vanderbilt University"
+  },
+  {
+    "university_name": "Culinary Arts Academy (CAA)"
+  },
+  {
+    "university_name": "Istituto Europeo di Design - IED"
+  },
+  {
+    "university_name": "Instituto Europeo di Design - IED"
+  },
+  {
+    "university_name": "IHMGS, International Hotel Management Gastronomy School"
+  },
+  {
+    "university_name": "University of Wollongong, Malaysia"
+  },
+  {
+    "university_name": "Kazimieras Simonavicius University, Vilnius"
+  },
+  {
+    "university_name": "University of Technology Sydney"
+  },
+  {
+    "university_name": "University of New South Wales, Sydney"
+  },
+  {
+    "university_name": "The University of Adelaide"
+  },
+  {
+    "university_name": "International Business School (IBS)"
+  },
+  {
+    "university_name": "Swinburne University of Technology"
+  },
+  {
+    "university_name": "International Business School"
+  },
+  {
+    "university_name": "DePaul University"
+  },
+  {
+    "university_name": "Queenâ€™s University, Canada"
+  },
+  {
+    "university_name": "The University of Queensland"
+  },
+  {
+    "university_name": "Colorado State University"
+  },
+  {
+    "university_name": "University of Western Australia"
+  },
+  {
+    "university_name": "University at Buffalo, The State University of New York, Buffalo (SUNY Buffalo)"
+  },
+  {
+    "university_name": "University of Auckland"
+  },
+  {
+    "university_name": "Dartmouth College"
+  },
+  {
+    "university_name": "Deakin University"
+  },
+  {
+    "university_name": "RMIT University"
+  },
+  {
+    "university_name": "Macquarie University"
+  },
+  {
+    "university_name": "Virginia Commonwealth University"
+  },
+  {
+    "university_name": "Griffith University"
+  },
+  {
+    "university_name": "University of Wollongong"
+  },
+  {
+    "university_name": "Queens University Belfast"
+  },
+  {
+    "university_name": "(INTO) The University of Oklahoma, Norman, Oklahoma"
+  },
+  {
+    "university_name": "La Trobe University, Melbourne"
+  },
+  {
+    "university_name": "La Trobe College"
+  },
+  {
+    "university_name": "Flinders University"
+  },
+  {
+    "university_name": "University of Louisville"
+  },
+  {
+    "university_name": "Brunel University of London"
+  },
+  {
+    "university_name": "(QAHE) Northumbria University"
+  },
+  {
+    "university_name": "(NAVITAS) The College, Swansea University"
+  },
+  {
+    "university_name": "Swansea University"
+  },
+  {
+    "university_name": "University of Canterbury"
+  },
+  {
+    "university_name": "(INTO) City University of London"
+  },
+  {
+    "university_name": "City, University of London"
+  },
+  {
+    "university_name": "University of Galway, Ireland"
+  },
+  {
+    "university_name": "University of Waikato"
+  },
+  {
+    "university_name": "Auckland University of Technology"
+  },
+  {
+    "university_name": "Central Michigan University"
+  },
+  {
+    "university_name": "Ball State University"
+  },
+  {
+    "university_name": "(STUDY GROUP) University of Kingston International Study Centre"
+  },
+  {
+    "university_name": "University of Derby"
+  },
+  {
+    "university_name": "(Shorelight) Cleveland State University"
+  },
+  {
+    "university_name": "University of South Dakota"
+  },
+  {
+    "university_name": "Victoria University of Wellington"
+  },
+  {
+    "university_name": "University of Staffordshire"
+  },
+  {
+    "university_name": "London Metropolitan University"
+  },
+  {
+    "university_name": "University of Central Arkansas"
+  },
+  {
+    "university_name": "York St John University (York)"
+  },
+  {
+    "university_name": "Xavier University"
+  },
+  {
+    "university_name": "(Study Group) University of Hartford"
+  },
+  {
+    "university_name": "Roger Williams University, Bristol, Rhode Island"
+  },
+  {
+    "university_name": "Marymount University"
+  },
+  {
+    "university_name": "Truman State University"
+  },
+  {
+    "university_name": "Southern Utah University, Cedar, Utah"
+  },
+  {
+    "university_name": "Leeds Trinity University"
+  },
+  {
+    "university_name": "Maryville University"
+  },
+  {
+    "university_name": "Shoreline Community College"
+  },
+  {
+    "university_name": "Central Methodist University"
+  },
+  {
+    "university_name": "Monroe University"
+  },
+  {
+    "university_name": "William Jessup University"
+  },
+  {
+    "university_name": "McMurry University"
+  },
+  {
+    "university_name": "Franklin College"
+  },
+  {
+    "university_name": "Charleston Southern University"
+  },
+  {
+    "university_name": "Finger Lakes Community College"
+  },
+  {
+    "university_name": "Sydney Institute of Business & Technology."
+  },
+  {
+    "university_name": "St George's, University of London"
+  },
+  {
+    "university_name": "Neapolis University, Pafos"
+  },
+  {
+    "university_name": "Niagara University, Ontario"
+  },
+  {
+    "university_name": "Australian College of Applied Professions"
+  },
+  {
+    "university_name": "Murdoch University, Perth"
+  },
+  {
+    "university_name": "Polimi Graduate School of Management"
+  },
+  {
+    "university_name": "NABA-Nuova Accademia Di Belle Arti"
+  },
+  {
+    "university_name": "LUT University, Lappeenranta"
+  },
+  {
+    "university_name": "Modul University"
+  },
+  {
+    "university_name": "Les Roches"
+  },
+  {
+    "university_name": "La Trobe Sydney (Navitas)"
+  },
+  {
+    "university_name": "LAB University of Applied Sciences"
+  },
+  {
+    "university_name": "Swiss Education Academy"
+  },
+  {
+    "university_name": "Swiss Business School"
+  },
+  {
+    "university_name": "Les Roches, Marbella Campus"
+  },
+  {
+    "university_name": "Abu Dhabi Hospitality Academy Les Roches, Dubai"
+  },
+  {
+    "university_name": "Western Sydney University, Sydney City (Navitas)"
+  },
+  {
+    "university_name": "Charles Sturt University, Sydney (Navitas)"
+  },
+  {
+    "university_name": "Charles Sturt University Melbourne (Navitas)"
+  },
+  {
+    "university_name": "(Navitas) Queens College"
+  },
+  {
+    "university_name": "Tampere University of Applied Sciences (TAMK), Tampere"
+  },
+  {
+    "university_name": "Swiss Educational College, Weggies"
+  },
+  {
+    "university_name": "University of Debrecen"
+  },
+  {
+    "university_name": "UCAM International"
+  },
+  {
+    "university_name": "Turku University of Applied Sciences"
+  },
+  {
+    "university_name": "Swiss Hotel Management School (SHMS)"
+  },
+  {
+    "university_name": "Budapest University of Economics and Business"
+  },
+  {
+    "university_name": "University of Eastern Finland"
+  },
+  {
+    "university_name": "Vilnius University"
+  },
+  {
+    "university_name": "University of Nicosia"
+  },
+  {
+    "university_name": "University of Vaasa"
+  },
+  {
+    "university_name": "University of Padua"
+  },
+  {
+    "university_name": "University of Southern Denmark, Odense and Sonderborg Campus"
+  },
+  {
+    "university_name": "Abu Dhabi University"
+  },
+  {
+    "university_name": "Curtin University, Dubai"
+  },
+  {
+    "university_name": "Emirates Aviation University"
+  },
+  {
+    "university_name": "HTMI Switzerland, Dubai"
+  },
+  {
+    "university_name": "Institute of Management Technology, Dubai"
+  },
+  {
+    "university_name": "Curtin College"
+  },
+  {
+    "university_name": "Manipal University"
+  },
+  {
+    "university_name": "University of Wollongong - Dubai"
+  },
+  {
+    "university_name": "University of Wollongong, GIFT City Campus"
+  },
+  {
+    "university_name": "Charles Darwin University International College- Up Education"
+  },
+  {
+    "university_name": "Deakin College"
+  },
+  {
+    "university_name": "Engineering Institute of Technology"
+  },
+  {
+    "university_name": "Excelsia College"
+  },
+  {
+    "university_name": "Charles Darwin University"
+  },
+  {
+    "university_name": "James Cook University, Townsville"
+  },
+  {
+    "university_name": "Eynesbury College"
+  },
+  {
+    "university_name": "International College of Management Sydney"
+  },
+  {
+    "university_name": "James Cook University (JCU) - Singapore"
+  },
+  {
+    "university_name": "James Cook University, Brisbane"
+  },
+  {
+    "university_name": "James Cook University, Cairns"
+  },
+  {
+    "university_name": "Russo Business School"
+  },
+  {
+    "university_name": "UP Education- Swinburne University of Technology"
+  },
+  {
+    "university_name": "Queensland University of Technology"
+  },
+  {
+    "university_name": "Monash College"
+  },
+  {
+    "university_name": "Murdoch University - Dubai"
+  },
+  {
+    "university_name": "South Australia Institute of Business & Technology"
+  },
+  {
+    "university_name": "RMIT University, Vietnam"
+  },
+  {
+    "university_name": "Swinburne University of Technology, Malaysia"
+  },
+  {
+    "university_name": "University of Canberra College"
+  },
+  {
+    "university_name": "University of Adelaide College"
+  },
+  {
+    "university_name": "University of South Australia"
+  },
+  {
+    "university_name": "University of Newcastle College of International Education"
+  },
+  {
+    "university_name": "UTS College"
+  },
+  {
+    "university_name": "University of Newcastle"
+  },
+  {
+    "university_name": "University of Canberra,Â  Sydney Hills- ECA"
+  },
+  {
+    "university_name": "University of the Sunshine Coast, Adelaide"
+  },
+  {
+    "university_name": "University of Tasmania"
+  },
+  {
+    "university_name": "UP Education University of Tasmania"
+  },
+  {
+    "university_name": "University of Tasmania ECA Melbourne"
+  },
+  {
+    "university_name": "Victoria University Sydney- ECA"
+  },
+  {
+    "university_name": "Victoria UniversityÂ Brisbane"
+  },
+  {
+    "university_name": "Ara Institute of Canterbury"
+  },
+  {
+    "university_name": "Global College Malta"
+  },
+  {
+    "university_name": "Kudan Institute of Japanese language & Culture"
+  },
+  {
+    "university_name": "Lincoln University"
+  },
+  {
+    "university_name": "Eastern Institute of Technology"
+  },
+  {
+    "university_name": "Manukau Institute of Technology"
+  },
+  {
+    "university_name": "Massey University"
+  },
+  {
+    "university_name": "New Zealand Airline Academy"
+  },
+  {
+    "university_name": "Toi Ohomai Institute of Technology"
+  },
+  {
+    "university_name": "Otago Polytechnic"
+  },
+  {
+    "university_name": "North Tec"
+  },
+  {
+    "university_name": "Pacific International Hotel Management School"
+  },
+  {
+    "university_name": "Southern Institute of Technology"
+  },
+  {
+    "university_name": "University of Waikato College"
+  },
+  {
+    "university_name": "UC International College, Christchurch"
+  },
+  {
+    "university_name": "Wellington Institute of Technology (WelTec)"
+  },
+  {
+    "university_name": "Unitec Institute of Technology"
+  },
+  {
+    "university_name": "Whitireia New Zealand"
+  },
+  {
+    "university_name": "Berkeley College, New York"
+  },
+  {
+    "university_name": "Berkeley College, New Jersey"
+  }
 ]

@@ -77,7 +77,15 @@ const ReportSchema = new mongoose.Schema(
     // Action taken on the reported content
     actionTaken: {
       type: String,
-      enum: ["none", "removed", "user_warned", "user_suspended", "user_banned"],
+      enum: [
+        "none",
+        "removed",
+        "user_warned",
+        "user_suspended",
+        "user_banned",
+        "post_removed", // Add this
+        "comment_removed",
+      ],
       default: "none",
     },
 
