@@ -6,6 +6,7 @@ const {
   getUsers,
   getUserDetails,
   updateUserRole,
+  unsuspendUser,
   suspendUser,
   getSubreddits,
   getReports,
@@ -43,5 +44,6 @@ router.get("/subreddits", getSubreddits);
 // Report management
 router.get("/reports", getReports);
 router.put("/reports/:id/resolve", resolveReport);
+router.put("/users/:id/unsuspend", unsuspendUser);
 
 module.exports = router;

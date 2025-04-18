@@ -455,6 +455,51 @@ exports.getReports = async (req, res, next) => {
   }
 };
 
+// @desc    Unsuspend a user
+// @route   PUT /api/admin/users/:id/unsuspend
+// @access  Private (admin only)
+exports.unsuspendUser = async (req, res, next) => {
+  try {
+    // Make sure only admins and admitty managers can access this
+    if (!["admin", "admitty_manager"].includes(req.user.role)) {
+      return res.status(403).json({
+        success: false,
+        message: "Not authorized to unsuspend users",
+      });
+    }
+
+    const user = await User.findById(req.params.id);
+
+    if (!user) {
+      return res.status(404).json({
+        success: false,
+        message: "User not found",
+      });
+    }
+
+    // Remove suspension
+    user.isSuspended = false;
+    user.suspensionReason = undefined;
+    user.suspensionEndDate = undefined;
+    await user.save();
+
+    res.status(200).json({
+      success: true,
+      data: {
+        _id: user._id,
+        username: user.username,
+        isSuspended: user.isSuspended,
+      },
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({
+      success: false,
+      message: "Server error",
+    });
+  }
+};
+
 // @desc    Resolve a report
 // @route   PUT /api/admin/reports/:id/resolve
 // @access  Private (admin only)
