@@ -400,6 +400,7 @@ import api from "../services/api";
 function SearchResults() {
   const location = useLocation();
   const { isAuthenticated } = useSelector((state) => state.auth);
+  const currentUser = useSelector((state) => state.auth.user);
 
   const [activeTab, setActiveTab] = useState("posts");
   const [searchQuery, setSearchQuery] = useState("");
@@ -714,9 +715,7 @@ function SearchResults() {
                         </div>
                         <div>
                           {isAuthenticated &&
-                            user.username !==
-                              useSelector((state) => state.auth.user)
-                                ?.username && (
+                            user.username !== currentUser?.username && (
                               <button
                                 className={`px-4 py-1 rounded-full text-sm font-medium ${
                                   user.isFollowing

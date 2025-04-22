@@ -554,6 +554,114 @@ exports.removePost = async (req, res) => {
   }
 };
 
+// @desc    Delete a user (admin only)
+// @route   DELETE /api/admin/users/:id
+// @access  Private (admin only)
+exports.deleteUser = async (req, res) => {
+  try {
+    const userId = req.params.id;
+
+    // Find the user
+    const user = await User.findById(userId);
+
+    if (!user) {
+      return res.status(404).json({
+        success: false,
+        message: "User not found",
+      });
+    }
+
+    // Don't allow deleting other admins or admitty managers unless you're an admitty manager
+    if (
+      (user.role === "admin" || user.role === "admitty_manager") &&
+      req.user.role !== "admitty_manager"
+    ) {
+      return res.status(403).json({
+        success: false,
+        message: "Not authorized to delete administrators",
+      });
+    }
+
+    // Delete user's posts, comments, etc.
+    await Post.deleteMany({ author: userId });
+    await Comment.deleteMany({ author: userId });
+
+    // Remove user from subreddit moderators
+    await Subreddit.updateMany(
+      { moderators: userId },
+      { $pull: { moderators: userId } }
+    );
+
+    // Delete the user
+    await user.deleteOne();
+
+    res.status(200).json({
+      success: true,
+      message: "User deleted successfully",
+    });
+  } catch (error) {
+    console.error("Error deleting user:", error);
+    res.status(500).json({
+      success: false,
+      message: "Server error",
+    });
+  }
+};
+
+// @desc    Delete a subreddit (admin only)
+// @route   DELETE /api/admin/subreddits/:id
+// @access  Private (admin only)
+exports.deleteSubreddit = async (req, res) => {
+  try {
+    const subredditId = req.params.id;
+
+    // Find the subreddit
+    const subreddit = await Subreddit.findById(subredditId);
+
+    if (!subreddit) {
+      return res.status(404).json({
+        success: false,
+        message: "Subreddit not found",
+      });
+    }
+
+    // Delete all posts and comments in the subreddit
+    const posts = await Post.find({ subreddit: subredditId });
+
+    for (const post of posts) {
+      await Comment.deleteMany({ post: post._id });
+    }
+
+    await Post.deleteMany({ subreddit: subredditId });
+
+    // Remove subreddit from users' followed subreddits
+    await User.updateMany(
+      { followedSubreddits: subredditId },
+      { $pull: { followedSubreddits: subredditId } }
+    );
+
+    // Remove subreddit from users' moderated subreddits
+    await User.updateMany(
+      { moderatedSubreddits: subredditId },
+      { $pull: { moderatedSubreddits: subredditId } }
+    );
+
+    // Delete the subreddit
+    await subreddit.deleteOne();
+
+    res.status(200).json({
+      success: true,
+      message: "Subreddit deleted successfully",
+    });
+  } catch (error) {
+    console.error("Error deleting subreddit:", error);
+    res.status(500).json({
+      success: false,
+      message: "Server error",
+    });
+  }
+};
+
 // @desc    Remove a comment
 // @route   DELETE /api/admin/comments/:id
 // @access  Private (admin only)
