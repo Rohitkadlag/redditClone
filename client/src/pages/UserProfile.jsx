@@ -90,7 +90,7 @@ function UserProfile() {
 
           {/* User Info */}
           <div className="flex-1 text-center md:text-left">
-            <h1 className="text-2xl font-bold">u/{profile.username}</h1>
+            <h1 className="text-2xl font-bold">{profile.username}</h1>
 
             <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-2 text-sm text-gray-500">
               <div className="flex items-center">
@@ -177,7 +177,7 @@ function UserProfile() {
               </>
             ) : (
               <div className="text-center py-8 text-gray-500">
-                <p>u/{profile.username} hasn't posted anything yet</p>
+                <p>{profile.username} hasn't posted anything yet</p>
               </div>
             )
           ) : comments.length > 0 ? (
@@ -199,7 +199,7 @@ function UserProfile() {
                       to={`/r/${comment.post?.subreddit?.name}`}
                       className="font-medium hover:underline"
                     >
-                      r/{comment.post?.subreddit?.name || "unknown"}
+                      {comment.post?.subreddit?.name || "unknown"}
                     </Link>
                     {" • "}
                     {formatDistanceToNow(new Date(comment.createdAt), {
@@ -230,7 +230,7 @@ function UserProfile() {
             </div>
           ) : (
             <div className="text-center py-8 text-gray-500">
-              <p>u/{profile.username} hasn't commented on anything yet</p>
+              <p>{profile.username} hasn't commented on anything yet</p>
             </div>
           )}
         </div>

@@ -816,7 +816,7 @@ const PopularCommunities = () => {
                       to={`/r/${subreddit.name}`}
                       className="text-base font-medium text-gray-900 hover:text-blue-600"
                     >
-                      r/{subreddit.name}
+                      {subreddit.name}
                     </Link>
                   </div>
                 </div>

@@ -227,7 +227,7 @@ function Comment({ comment, onVote, onReply, onEdit, onDelete }) {
           to={`/user/${comment.author.username}`}
           className="font-bold hover:underline"
         >
-          u/{comment.author.username}
+          {comment.author.username}
         </Link>
         {" • "}
         <span title={new Date(comment.createdAt).toLocaleString()}>

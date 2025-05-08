@@ -12,7 +12,7 @@ function DiscussionCard({ discussion }) {
         <div className="text-sm text-gray-500 mb-3">
           <span className="flex items-center">
             <UserIcon className="h-4 w-4 mr-1" />
-            Posted by u/{discussion.author.username}
+            Posted by {discussion.author.username}
             {" • "}
             {formatDistanceToNow(new Date(discussion.createdAt), {
               addSuffix: true,

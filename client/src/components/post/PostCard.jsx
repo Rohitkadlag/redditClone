@@ -66,7 +66,7 @@ function PostCard({ post, onVote, detailed = false }) {
                   to={`/r/${post.subreddit.name}`}
                   className="font-bold hover:underline"
                 >
-                  r/{post.subreddit.name}
+                  {post.subreddit.name}
                 </Link>
                 {" • "}
               </>
@@ -76,7 +76,7 @@ function PostCard({ post, onVote, detailed = false }) {
               to={`/user/${post.author.username}`}
               className="hover:underline"
             >
-              u/{post.author.username}
+              {post.author.username}
             </Link>
             {" • "}
             {formatDistanceToNow(new Date(post.createdAt), { addSuffix: true })}

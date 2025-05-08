@@ -81,7 +81,7 @@ function PostDetail() {
           to={`/r/${subredditName}`}
           className="text-reddit-orange hover:underline font-medium"
         >
-          ← Back to r/{subredditName}
+          ← Back to {subredditName}
         </Link>
       </div>
 

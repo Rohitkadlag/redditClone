@@ -499,7 +499,7 @@ function Sidebar() {
         const communities = response.data.data.map((subreddit) => ({
           id: subreddit._id,
           to: `/r/${subreddit.name || subreddit.slug}`,
-          label: `r/${subreddit.name}`,
+          label: `${subreddit.name}`,
           // Generate a color based on the subreddit name for consistency
           color: getSubredditColor(subreddit.name),
         }));

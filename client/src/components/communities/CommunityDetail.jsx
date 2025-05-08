@@ -124,7 +124,7 @@ const CommunityDetail = () => {
             </div>
             <div className="ml-4">
               <h1 className="text-xl md:text-3xl font-bold text-white">
-                r/{currentSubreddit.name}
+                {currentSubreddit.name}
               </h1>
               <p className="text-white text-opacity-90 text-sm md:text-base">
                 {currentSubreddit.subscribers} members
@@ -197,7 +197,7 @@ const CommunityDetail = () => {
                     No Posts Yet
                   </h3>
                   <p className="mt-1 text-sm text-gray-500">
-                    Be the first to post in r/{currentSubreddit.name}
+                    Be the first to post in {currentSubreddit.name}
                   </p>
                   <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md text-sm font-medium hover:bg-blue-700">
                     Create Post
@@ -209,7 +209,7 @@ const CommunityDetail = () => {
             {activeTab === "about" && (
               <div className="bg-white rounded-lg shadow p-6">
                 <h2 className="text-xl font-bold mb-4">
-                  About r/{currentSubreddit.name}
+                  About {currentSubreddit.name}
                 </h2>
                 <p className="text-gray-700 mb-6">
                   {currentSubreddit.description || "No description available."}

@@ -319,7 +319,7 @@ function CreatePost() {
               <option value="">Select a community</option>
               {filteredCommunities.map((subreddit) => (
                 <option key={subreddit._id} value={subreddit._id}>
-                  r/{subreddit.name} ({subreddit.subscribers} members)
+                  {subreddit.name} ({subreddit.subscribers} members)
                 </option>
               ))}
             </select>

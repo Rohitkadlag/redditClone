@@ -3926,7 +3926,7 @@ function AdminDashboard() {
                               </div>
                               <div className="ml-4">
                                 <div className="text-sm font-medium text-gray-900">
-                                  r/{community.name}
+                                  {community.name}
                                 </div>
                                 <div className="text-sm text-gray-500 max-w-xs truncate">
                                   {community.description || "No description"}

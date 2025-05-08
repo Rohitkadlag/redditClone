@@ -621,7 +621,7 @@ function SearchResults() {
                             to={`/r/${community.name}`}
                             className="text-lg font-medium hover:text-blue-600"
                           >
-                            r/{community.name}
+                            {community.name}
                           </Link>
                           <p className="text-sm text-gray-600">
                             {community.subscribers} members
@@ -700,7 +700,7 @@ function SearchResults() {
                             to={`/user/${user.username}`}
                             className="text-lg font-medium hover:text-blue-600"
                           >
-                            u/{user.username}
+                            {user.username}
                           </Link>
                           <p className="text-sm text-gray-600">
                             {user.karma || 0} karma
@@ -754,7 +754,7 @@ function SearchResults() {
                         {discussion.title}
                       </h3>
                       <div className="text-sm text-gray-500 mb-2">
-                        Posted by u/{discussion.author?.username || "deleted"} •{" "}
+                        Posted by {discussion.author?.username || "deleted"} •{" "}
                         {new Date(discussion.createdAt).toLocaleDateString()}
                       </div>
                       <p className="text-gray-600 mb-2">

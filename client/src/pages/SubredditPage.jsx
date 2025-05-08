@@ -517,7 +517,7 @@ function SubredditPage() {
           {/* Subreddit Details */}
           <div className="flex-1">
             <div className="flex flex-col md:flex-row md:items-center justify-between">
-              <h1 className="text-2xl font-bold">r/{subreddit.name}</h1>
+              <h1 className="text-2xl font-bold">{subreddit.name}</h1>
 
               {isAuthenticated && (
                 <button
@@ -552,7 +552,7 @@ function SubredditPage() {
 
               <div className="flex items-center">
                 <UserIcon className="h-4 w-4 mr-1" />
-                Created by u/{subreddit.creator?.username || "unknown"}
+                Created by {subreddit.creator?.username || "unknown"}
               </div>
 
               <div className="flex items-center">
@@ -683,7 +683,7 @@ function SubredditPage() {
           {subreddit.rules && subreddit.rules.length > 0 && (
             <div className="bg-white rounded-lg shadow border border-reddit-border p-4">
               <h2 className="text-lg font-semibold mb-3">
-                r/{subreddit.name} Rules
+                {subreddit.name} Rules
               </h2>
 
               <div className="space-y-3">

@@ -110,7 +110,7 @@ function SubredditSidebar({ subreddits, loading }) {
               ></div>
 
               <div className="flex-1 min-w-0">
-                <p className="font-medium truncate">r/{subreddit.name}</p>
+                <p className="font-medium truncate">{subreddit.name}</p>
                 <div className="flex items-center text-xs text-gray-500">
                   <UsersIcon className="h-3 w-3 mr-1" />
                   {subreddit.subscribers.toLocaleString()} members
